@@ -80,7 +80,9 @@ $grey: #707070;
 	height: 100%;
 	background-color: rgba(#000, 0.5);
 }
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	margin: 0 !important;
 }
@@ -180,6 +182,7 @@ h3 {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
+		cursor: pointer;
 	}
 	&.top {
 		position: absolute;
@@ -367,6 +370,9 @@ h3 {
 	@media (max-width: 800px) {
 		.hero-sidebar {
 			display: none;
+		}
+		.logo {
+			width: 70%;
 		}
 	}
 }
@@ -802,7 +808,7 @@ h3 {
 				margin-right: 12px;
 			}
 		}
-		.parnter-image {
+		.partner-image {
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -815,6 +821,13 @@ h3 {
 		&:after {
 			content: url("../assets/img/right-arrow.svg");
 			margin-left: 16px;
+		}
+	}
+	@media (max-width: 800px) {
+		grid-template-columns: 1fr;
+		.partner-box {
+			width: 90%;
+			grid-template-columns: 1fr;
 		}
 	}
 }

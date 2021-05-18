@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 	var pathname = window.location.pathname;
-	console.log(pathname);
+
 	if (pathname == "/") {
 		$(window).scroll(function (event) {
 			if (pageYOffset >= window.innerHeight * 0.66) {
@@ -28,6 +28,10 @@ jQuery(document).ready(function ($) {
 		speed: 300,
 		slidesToShow: 1,
 		adaptiveHeight: true,
+	});
+
+	$("#header .icon").click(function () {
+		window.scrollTo(0, 0);
 	});
 
 	$(".menu-item-has-children").append('<div class="toggle"></div>');

@@ -25,7 +25,7 @@ $email=get_field( 'email', $block['partner']->ID );
         <div class='partner-phone'><?php echo $phone?></div>
         <div class='partner-email'>E-Mail schreiben</div>
       </div>
-      <div class='parnter-image' style='background-image:url(<?php echo $image?>)'></div>
+      <div class='partner-image' style='background-image:url(<?php echo $image?>)'></div>
     </div>
   </div>
   
