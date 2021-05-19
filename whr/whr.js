@@ -94,6 +94,7 @@ jQuery(document).ready(function ($) {
 			"Dez",
 		],
 	};
+
 	let calendar = document.getElementById("start-text-calendar");
 	pickmeup("#start-text-calendar", {
 		format: "d. b Y",
