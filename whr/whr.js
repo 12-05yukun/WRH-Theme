@@ -44,16 +44,14 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	$(".menu-item-has-children a")
-		.first()
-		.click(function (e) {
-			e.preventDefault();
-			if ($(e.target).next().hasClass("open")) {
-				$(e.target).next().removeClass("open");
-			} else {
-				$(e.target).next().addClass("open");
-			}
-		});
+	$(".menu-item-has-children >a:first-child").click(function (e) {
+		e.preventDefault();
+		if ($(e.target).next().hasClass("open")) {
+			$(e.target).next().removeClass("open");
+		} else {
+			$(e.target).next().addClass("open");
+		}
+	});
 
 	pickmeup.defaults.locales["de"] = {
 		days: [
