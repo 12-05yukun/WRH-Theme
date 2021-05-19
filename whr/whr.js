@@ -116,9 +116,24 @@ jQuery(document).ready(function ($) {
 		selected.first().addClass("first");
 	});
 
+	const getModifiedTime = (unparsedTime) => {
+		let modified = new Date(unparsedTime);
+		let day = modified.getDate();
+		let month = modified.getMonth() + 1;
+		let year = modified.getFullYear();
+		return `${day}.${month}.${year}`;
+	};
+
+	let arrival;
+	let departure;
+
 	calendar.addEventListener("pickmeup-change", function (e) {
 		$("#start-date").text(e.detail.formatted_date[0].replace(/\"/g, ""));
 		$("#end-date").text(e.detail.formatted_date[1].replace(/\"/g, ""));
+		arrival = Date.parse(e.detail.date[0]);
+		departure = Date.parse(e.detail.date[1]);
+		arrival = getModifiedTime(arrival);
+		departure = getModifiedTime(departure);
 	});
 	calendar.addEventListener("pickmeup-show", function (e) {
 		$("body").css({
@@ -129,5 +144,18 @@ jQuery(document).ready(function ($) {
 		$("body").css({
 			overflow: "auto",
 		});
+	});
+
+	$("#find-room").click(function () {
+		let gast = $("#gast").val();
+		window.open(
+			"https://onepagebooking.com/hoteldunord?arrival=" +
+				arrival +
+				"&departure=" +
+				departure +
+				"&lang=de&ratetype=bar&adults=" +
+				gast +
+				"&children=0"
+		);
 	});
 });
