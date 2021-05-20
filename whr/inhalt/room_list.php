@@ -15,7 +15,8 @@ $types=get_field_object('field_6098fca180deb');
         if($key==get_field('type',$room)){
     ?>
     <div class='room-container'>
-      <div class='room-image' style='background-image:url(<?php echo get_field('image',$room)?>)'>
+      <div class='room-image' >
+        <img src='<?php  echo get_field('image',$room)?>' />
       </div>
       <div class='room-info'>
         <h3><?php echo get_field('title',$room)?></h3>

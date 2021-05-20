@@ -12,7 +12,9 @@ $angebots = get_posts(array(
   <div class='angebot-list-items'>
     <?php if ($angebots){ foreach($angebots as $angebot){ $punkte=get_field('punkte',$angebot);?>
       <div class='item'>
-        <div class='item-image' style='background-image:url(<?php echo get_field('image',$angebot)?>)'></div>
+        <div class='item-image' >
+           <img src='<?php echo get_field('image',$angebot)?>' />
+        </div>
         <div class='angebot-list-info'>
            <h2><?php echo get_field('headline',$angebot)?></h2>
            <div class='excerpt'><?php echo get_field('excerpt',$angebot)?></div>

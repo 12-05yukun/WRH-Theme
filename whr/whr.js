@@ -95,6 +95,10 @@ jQuery(document).ready(function ($) {
 		],
 	};
 
+	const today = new Date();
+	const tomorrow = new Date(today);
+	tomorrow.setDate(tomorrow.getDate() + 1);
+
 	let calendar = document.getElementById("start-text-calendar");
 	pickmeup("#start-text-calendar", {
 		format: "d. b Y",
@@ -104,6 +108,7 @@ jQuery(document).ready(function ($) {
 		prev: "<div class='calendar-prev'></div>",
 		next: "<div class='calendar-next'></div>",
 		locale: "de",
+		date: [new Date(), tomorrow],
 	});
 
 	let time = pickmeup("#start-text-calendar").get_date('"d. b Y"');
@@ -124,8 +129,8 @@ jQuery(document).ready(function ($) {
 		return `${day}.${month}.${year}`;
 	};
 
-	let arrival;
-	let departure;
+	let arrival = getModifiedTime(today);
+	let departure = getModifiedTime(tomorrow);
 
 	calendar.addEventListener("pickmeup-change", function (e) {
 		$("#start-date").text(e.detail.formatted_date[0].replace(/\"/g, ""));
@@ -158,4 +163,43 @@ jQuery(document).ready(function ($) {
 				"&children=0"
 		);
 	});
+	ScrollReveal().reveal(".room-list .room-list-page", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+	reveal();
 });
+
+function reveal() {
+	ScrollReveal().reveal(".right .block-content", {
+		delay: 200,
+		origin: "left",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".left .block-content", {
+		delay: 200,
+		origin: "right",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".content-group", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".newsletter-box", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".angebot-list", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".room-list h1", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+}

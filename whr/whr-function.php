@@ -12,6 +12,7 @@ function enque_whr_stuff() {
     wp_enqueue_style( 'whr-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
     wp_enqueue_script( 'whr-slider-script', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '1.8.1', true );
     wp_enqueue_script( 'whr-calendar-script2', get_template_directory_uri().'/whr/pickmeup.min.js', array('jquery'), '1.4.14', true );
+    wp_enqueue_script( 'whr-scroll-reveal', 'https://unpkg.com/scrollreveal', array('jquery'), '1.4.1', true );
     wp_enqueue_style( 'whr-calendar-style2', get_template_directory_uri().'/whr/pickmeup.css');
     //wp_enqueue_script( 'whr-reveal', 'https://unpkg.com/scrollreveal', array('jquery'), '1.8.1', false );
     //wp_enqueue_script( 'whr-number', '//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js', array('jquery'), '2.0.6', false );
