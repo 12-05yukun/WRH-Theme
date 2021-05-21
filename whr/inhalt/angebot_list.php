@@ -16,9 +16,9 @@ $angebots =$block['angebot']
            <h2><?php echo get_field('headline',$angebot)?></h2>
            <div class='excerpt'><?php echo get_field('excerpt',$angebot)?></div>
            <div class='angebot-list-detail'>
-                   <?php foreach($punkte as $punkt ) { ?>
+                   <?php if($punkte){ foreach($punkte as $punkt ) { ?>
                    <div class='punkt' style='background-image:url(<?php echo $punkt['icon']?>)' ><?php echo $punkt['text']?> </div>
-                   <?php }?>
+                   <?php } }?>
            </div>
            <a href='<?php echo  get_field('link',$angebot)['url']?>'><?php echo get_field('link',$angebot)['title']?></a>
         </div>
