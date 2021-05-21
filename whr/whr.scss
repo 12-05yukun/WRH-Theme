@@ -326,6 +326,8 @@ h3 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	overflow: hidden;
 	&:after {
 		@include image-darker();
 		z-index: 2;

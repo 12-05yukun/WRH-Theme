@@ -31,7 +31,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 #menu .sub-menu{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;max-height:0;overflow:hidden}
 #menu .sub-menu.open{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;max-height:500px;display:block}
 #menu li.current-menu-item>a{border-bottom:1px solid white}
-.hero{height:100vh;width:100vw;background-size:cover;background-position:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.hero{height:100vh;width:100vw;background-size:cover;background-position:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;overflow:hidden}
 .hero:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:2}
 .hero video{position:absolute;min-width:100%;min-height:100%;overflow:hidden;z-index:1;background:#000}
 .hero .logo{height:240px;width:360px;background-position:center;background-repeat:no-repeat;background-size:contain;position:absolute;top:24px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);z-index:3}
