@@ -63,9 +63,9 @@ function my_acf_op_init() {
 
         // Register options page.
         $option_page = acf_add_options_page(array(
-            'page_title'    => __('WHR Settings'),
-            'menu_title'    => __('WHR Settings'),
-            'menu_slug'     => 'WHR-settings',
+            'page_title'    => __('WRH Settings'),
+            'menu_title'    => __('WRH Settings'),
+            'menu_slug'     => 'WRH-settings',
             'capability'    => 'manage_options',
             'redirect'      => false
         ));

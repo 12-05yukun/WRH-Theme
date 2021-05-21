@@ -33,8 +33,8 @@
                                            <img src='<?php echo the_field('logo_small','option')?>'/>
 					</div>
 				  <div class='header-menu-bar' >
-						<a href='#'>KONTAKT</a>
-						<a href='#'>BUCHEN</a>
+						<a href='<?php echo get_field('kontakt','option')?>'>KONTAKT</a>
+						<a href='<?php echo get_field('buchen','option')?>'>BUCHEN</a>
 						<a href='#'>DE</a>
 						<div id='header-burger'></div>
 					</div>
