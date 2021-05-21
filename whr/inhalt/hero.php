@@ -3,6 +3,9 @@
     <div class="content">
         <div class="headline"><?php echo $block['headline'];?></div>
         <div class="text"><?php echo $block['subline'];?></div>
+        <?php if($block['video']){?>
+           <div class="play"><img src="<?php echo get_template_directory_uri().'/assets/img/play.svg';?>" alt="Play" /></div>
+        <?php } ?>
     </div>
     <?php if($block['video']){?>
        <video controls src="<?php echo $block['video'];?>">

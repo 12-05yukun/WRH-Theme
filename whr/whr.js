@@ -21,6 +21,16 @@ jQuery(document).ready(function ($) {
 		$("#menu").removeClass("open");
 	});
 
+	let video = $(".hero video");
+
+	$(".play").click(function () {
+		video.fadeIn();
+		video.trigger("play");
+	});
+	video.on("pause", (event) => {
+		video.fadeOut();
+	});
+
 	$(".room-slicker").slick({
 		arrows: false,
 		dots: true,
@@ -52,6 +62,8 @@ jQuery(document).ready(function ($) {
 			$(e.target).next().addClass("open");
 		}
 	});
+
+	$(".current-menu-parent .sub-menu").addClass("open");
 
 	pickmeup.defaults.locales["de"] = {
 		days: [
@@ -200,6 +212,7 @@ function reveal() {
 		delay: 200,
 		origin: "bottom",
 		distance: "20px",
+		reset: true,
 	});
 	ScrollReveal().reveal(".room-list h1", {
 		delay: 200,
