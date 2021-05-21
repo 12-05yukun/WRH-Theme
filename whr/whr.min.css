@@ -11,9 +11,10 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .whr-button{padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:white;background-color:#a8925e;cursor:pointer;font-family:"Work Sans";font-size:12px}
 .header{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;z-index:9;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:fixed;top:0;left:0}
 .header .icon-bar{display:none}
-.header .header-menu-bar{-webkit-box-sizing:border-box;box-sizing:border-box;padding:12px 24px;margin-right:16px;width:25%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;color:#383838}
+.header .header-menu-bar{height:72px;-webkit-box-sizing:border-box;box-sizing:border-box;padding:12px 24px;margin-right:16px;width:25%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:white;color:#383838}
 .header .header-menu-bar a{color:#383838}
-.header .icon{display:block;height:48px;width:48px;margin-left:48px;background-position:center;background-repeat:no-repeat;background-size:contain;cursor:pointer}
+.header .icon{display:block;margin-left:48px;background-position:center;background-repeat:no-repeat;background-size:contain;cursor:pointer}
+.header .icon img{height:72px;-o-object-fit:cover;object-fit:cover}
 .header.top{position:absolute;top:0;left:0}
 .header.top .icon{display:none}
 .header.top .icon-bar{padding:28px;display:block}
@@ -42,16 +43,20 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .block.left{grid-template-columns:1.7fr 1fr}
 .block .block-content{padding:192px 96px;background-color:#f2f2f2}
 .block .block-content p{font-family:"Work Sans";font-size:20px;line-height:36px}
-.block .block-content a{font-family:"Work Sans";font-size:20px;line-height:36px;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
-.block .block-content a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px;margin-top:4px}
+.block .block-content p a{color:#a8925e}
+.block .block-content p a:hover{text-decoration:underline}
+.block .block-content .link{font-family:"Work Sans";font-size:20px;line-height:36px;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
+.block .block-content .link:after{content:url("../assets/img/right-arrow.svg");margin-left:16px;margin-top:4px}
 .block .block-image{background-position:center;background-size:cover;background-repeat:no-repeat}
 .halfblock{height:auto;width:100%;display:grid;color:#383838;grid-template-columns:1fr 1fr}
 .halfblock.row-small{margin:0 auto}
 .halfblock.row-small .block-content{padding:36px 48px}
 .halfblock .block-content{padding:192px 96px}
 .halfblock .block-content p{font-family:"Work Sans";font-size:20px;line-height:36px}
-.halfblock .block-content a{font-family:"Work Sans";font-size:20px;line-height:36px;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
-.halfblock .block-content a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px;margin-top:4px}
+.halfblock .block-content p a{color:#a8925e}
+.halfblock .block-content p a:hover{text-decoration:underline}
+.halfblock .block-content .link{font-family:"Work Sans";font-size:20px;line-height:36px;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
+.halfblock .block-content .link:after{content:url("../assets/img/right-arrow.svg");margin-left:16px;margin-top:4px}
 .halfblock .block-image{background-position:center;background-size:cover;background-repeat:no-repeat}
 .halfblock.room-block{display:-webkit-box;display:-ms-flexbox;display:flex}
 .halfblock.room-block .block-content{width:50vw}
@@ -81,7 +86,8 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .quote .content{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px;max-width:900px;margin:36px auto}
 .quote .author{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .fulltext{padding-left:320px}
-.fulltext p{font-family:"Work Sans";font-size:20px;line-height:36px;max-width:1100px}
+.fulltext h1{margin-bottom:48px}
+.fulltext p{font-family:"Work Sans";font-size:20px;line-height:36px}
 .fulltext a{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
 .fulltext a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 .pageheader{height:66vh;width:100%;color:white;background-size:cover;background-repeat:no-repeat;background-position:center}
@@ -202,11 +208,11 @@ h2{font-size:32px;line-height:42px}
 .hero .hero-sidebar{display:none}
 .hero .logo{width:70%}
 .block .block-content p{font-size:16px;line-height:32px}
-.block .block-content a{font-size:16px;line-height:32px}
+.block .block-content .link{font-size:16px;line-height:32px}
 .block{grid-template-columns:1fr !important}
 .block .block-content{padding:24px}
 .halfblock .block-content p{font-size:16px;line-height:32px}
-.halfblock .block-content a{font-size:16px;line-height:32px}
+.halfblock .block-content .link{font-size:16px;line-height:32px}
 .halfblock{grid-template-columns:1fr !important}
 .halfblock .block-content{padding:24px}
 .halfblock.room-block{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}

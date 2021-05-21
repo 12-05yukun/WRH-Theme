@@ -177,6 +177,9 @@ function reveal() {
 		origin: "left",
 		distance: "20px",
 	});
+	ScrollReveal().reveal(".block-image", {
+		delay: 200,
+	});
 	ScrollReveal().reveal(".left .block-content", {
 		delay: 200,
 		origin: "right",
@@ -192,6 +195,7 @@ function reveal() {
 		origin: "bottom",
 		distance: "20px",
 	});
+
 	ScrollReveal().reveal(".angebot-list", {
 		delay: 200,
 		origin: "bottom",

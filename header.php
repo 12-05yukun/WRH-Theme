@@ -29,8 +29,8 @@
 							<a href='<?php echo $icon['link']['url']?>'><img src='<?php echo $icon['icon']?>'/></a>
 						<?php }?>
 					</div>
-					<div style='background-image:url(<?php echo the_field('logo_small','option')?>)' class='icon'>
-            
+					<div  class='icon'>
+                                           <img src='<?php echo the_field('logo_small','option')?>'/>
 					</div>
 				  <div class='header-menu-bar' >
 						<a href='#'>KONTAKT</a>
