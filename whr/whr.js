@@ -21,16 +21,6 @@ jQuery(document).ready(function ($) {
 		$("#menu").removeClass("open");
 	});
 
-	let video = $(".hero video");
-
-	$(".play").click(function () {
-		video.fadeIn();
-		video.trigger("play");
-	});
-	video.on("pause", (event) => {
-		video.fadeOut();
-	});
-
 	$(".room-slicker").slick({
 		arrows: false,
 		dots: true,
