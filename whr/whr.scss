@@ -918,9 +918,8 @@ h3 {
 	}
 	.room-list-page {
 		margin: 0 auto;
-		max-width: 1200px;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 48px;
 		justify-items: center;
 		.room-container {
