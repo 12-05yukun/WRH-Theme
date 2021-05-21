@@ -1,8 +1,5 @@
 <?php 
-$angebots = get_posts(array(
-	'posts_per_page'	=> -1,
-	'post_type'			=> 'angebot'
-));
+$angebots =$block['angebot']
 
 ?>
 
