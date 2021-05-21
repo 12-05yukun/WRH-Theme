@@ -309,8 +309,8 @@ h3 {
 			display: block;
 		}
 	}
-	.current_page_item a {
-		border-bottom: 1px solid white !important;
+	li.current-menu-item > a {
+		border-bottom: 1px solid white;
 	}
 	@media (max-width: 800px) {
 		width: 100%;
