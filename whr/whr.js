@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
-	var pathname = window.location.pathname;
 	reveal();
+	var pathname = window.location.pathname;
 	if (pathname == "/") {
 		$(window).scroll(function (event) {
 			if (pageYOffset >= window.innerHeight * 0.66) {
@@ -186,11 +186,7 @@ function reveal() {
 		origin: "right",
 		distance: "20px",
 	});
-	ScrollReveal().reveal(".content-group", {
-		delay: 200,
-		origin: "bottom",
-		distance: "20px",
-	});
+
 	ScrollReveal().reveal(".newsletter-box", {
 		delay: 200,
 		origin: "bottom",
@@ -198,35 +194,6 @@ function reveal() {
 	});
 
 	ScrollReveal().reveal(".quote", {
-		delay: 200,
-		origin: "bottom",
-		distance: "20px",
-	});
-
-	ScrollReveal().reveal(".angebot-list h1", {
-		delay: 200,
-		origin: "bottom",
-		distance: "20px",
-		reset: true,
-	});
-	ScrollReveal().reveal(".angebot-list p", {
-		delay: 200,
-		origin: "bottom",
-		distance: "20px",
-		reset: true,
-	});
-	ScrollReveal().reveal(".angebot-list-items", {
-		delay: 200,
-		origin: "bottom",
-		distance: "20px",
-		reset: true,
-	});
-	ScrollReveal().reveal(".room-list h1", {
-		delay: 200,
-		origin: "bottom",
-		distance: "20px",
-	});
-	ScrollReveal().reveal(".room-list .room-list-page", {
 		delay: 200,
 		origin: "bottom",
 		distance: "20px",

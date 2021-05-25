@@ -29,3 +29,15 @@ $angebots =$block['angebot']
     <?php }?>
   </div>
 </div>
+
+<script>
+jQuery(document).ready(function ($) {
+        ScrollReveal().reveal(".angebot-list", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+		
+	});
+        ScrollReveal().reveal('.item', { origin: "bottom",distance: "20px",delay: 200,interval: 200 });
+})
+</script>

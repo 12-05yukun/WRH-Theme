@@ -4,3 +4,14 @@
     <p class='content-text'><?php echo $block['subline']?></p>
   </div>
 </div>
+
+<script>
+jQuery(document).ready(function ($) {
+        ScrollReveal().reveal(".pageheader-content", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+		reset: true,
+	});
+})
+</script>

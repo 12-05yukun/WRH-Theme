@@ -31,3 +31,14 @@ $types=get_field_object('field_6098fca180deb');
   </div>
   <?php }?>
 </div>
+
+<script>
+jQuery(document).ready(function ($) {
+        ScrollReveal().reveal(".room-list h1", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+        ScrollReveal().reveal('.room-container', { origin: "bottom",distance: "20px",delay: 200,interval: 200 });
+})
+</script>

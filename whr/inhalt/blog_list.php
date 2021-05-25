@@ -32,3 +32,10 @@ $blogs = get_posts(array(
   <?php }?>
   </div>
 </div>
+
+<script>
+jQuery(document).ready(function ($) {
+     
+        ScrollReveal().reveal('.blog-container', { delay: 200,interval: 200,origin: "bottom",distance: "20px", });
+})
+</script>

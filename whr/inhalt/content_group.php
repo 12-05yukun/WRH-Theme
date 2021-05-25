@@ -12,3 +12,15 @@
     <?php }?>
   </div>
 </div>
+
+
+<script>
+jQuery(document).ready(function ($) {
+        ScrollReveal().reveal(".content-group", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+        });
+        ScrollReveal().reveal('.item', { delay: 200,interval: 200,origin: "bottom",distance: "20px", });
+})
+</script>
