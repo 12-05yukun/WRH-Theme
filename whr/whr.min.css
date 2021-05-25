@@ -101,7 +101,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .footer .footer-info{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:32px;font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .footer .footer-info .footer-erleben{max-width:300px}
 .footer .footer-policy-container{padding-top:32px;color:rgba(255,255,255,0.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
-.footer .footer-policy-container a{color:rgba(255,255,255,0.5)}
+.footer .footer-policy-container .footer-policy a{color:rgba(255,255,255,0.5) !important}
 .full-image{background-position:center;background-repeat:no-repeat;background-size:cover;display:block;width:100%}
 .newsletter{background-color:#a8925e;text-align:center;color:white;text-align:left}
 .newsletter .newsletter-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:right;-ms-flex-pack:right;justify-content:right;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:600px;margin:0 auto}
