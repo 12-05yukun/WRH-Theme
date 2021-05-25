@@ -18,7 +18,7 @@
 		    <div class='footer-policy-container'>
 					 <div class='footer-copyrights'>(c) 2021 Weinromantikhotel Richtershof</div>
 					 <div class='footer-policy'> 
-                                         <?php wp_nav_menu( array( 'footer-menu' => 'footer-menu') ); ?>
+                                         <?php wp_nav_menu( array( 'menu' => 'footer-menu') ); ?>
                                          </div>
 	      </div>
 
