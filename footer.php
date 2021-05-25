@@ -17,7 +17,12 @@
 				</div>
 		    <div class='footer-policy-container'>
 					 <div class='footer-copyrights'>(c) 2021 Weinromantikhotel Richtershof</div>
-					 <div class='footer-policy'>Datenschutz | Impressum | AGB | Karriere</div>
+					 <div class='footer-policy'> 
+                                         <?php if(the_field('datenschutz', 'option')){?><a href='<?php echo the_field('datenschutz', 'option')?>'>Datenschutz</a><?php }?>
+                               <?php if(the_field('impressum', 'option')){?>  <a href='<?php echo the_field('impressum', 'option')?>'>| Impressum </a><?php }?>
+                              <?php if(the_field('agb', 'option')){?>   <a href='<?php echo the_field('agb', 'option')?>'>| AGB </a><?php }?>
+                              <?php if(the_field('karriere', 'option')){?><a href='<?php echo the_field('karriere', 'option')?>'> | Karriere </a><?php }?>
+                                         </div>
 	      </div>
 
 			</footer>

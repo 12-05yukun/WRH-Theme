@@ -720,6 +720,9 @@ h3 {
 		color: rgba(#fff, 0.5);
 		display: flex;
 		justify-content: space-between;
+		a {
+			color: rgba(#fff, 0.5);
+		}
 	}
 	@media (max-width: 800px) {
 		padding: 16px;
