@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 	var pathname = window.location.pathname;
-
+	reveal();
 	if (pathname == "/") {
 		$(window).scroll(function (event) {
 			if (pageYOffset >= window.innerHeight * 0.66) {
@@ -165,15 +165,14 @@ jQuery(document).ready(function ($) {
 				"&children=0"
 		);
 	});
-	ScrollReveal().reveal(".room-list .room-list-page", {
+});
+
+function reveal() {
+	ScrollReveal().reveal(".fulltext", {
 		delay: 200,
 		origin: "bottom",
 		distance: "20px",
 	});
-	reveal();
-});
-
-function reveal() {
 	ScrollReveal().reveal(".right .block-content", {
 		delay: 200,
 		origin: "left",
@@ -198,13 +197,41 @@ function reveal() {
 		distance: "20px",
 	});
 
-	ScrollReveal().reveal(".angebot-list", {
+	ScrollReveal().reveal(".quote", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+
+	ScrollReveal().reveal(".angebot-list h1", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+		reset: true,
+	});
+	ScrollReveal().reveal(".angebot-list p", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+		reset: true,
+	});
+	ScrollReveal().reveal(".angebot-list-items", {
 		delay: 200,
 		origin: "bottom",
 		distance: "20px",
 		reset: true,
 	});
 	ScrollReveal().reveal(".room-list h1", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".room-list .room-list-page", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+	ScrollReveal().reveal(".kontakt", {
 		delay: 200,
 		origin: "bottom",
 		distance: "20px",
