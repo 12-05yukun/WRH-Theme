@@ -4,7 +4,7 @@ p{margin:0}
 u{-webkit-text-decoration-color:transparent;text-decoration-color:transparent;border-bottom:4px solid #a8925e}
 a{text-decoration:none;color:white;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
 h1{font-family:"Noto Serif",serif;font-size:60px;margin:16px 0;line-height:80px;font-weight:normal}
-li{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
+li{font-family:"Work Sans";font-size:20px;line-height:36px}
 h2{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
 h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .row{padding:196px;margin:0 auto}
@@ -100,7 +100,9 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .footer{background-color:#383838;color:white;padding:80px 320px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .footer .footer-info{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:32px;font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .footer .footer-info .footer-erleben{max-width:300px}
-.footer .footer-policy-container{padding-top:32px;color:rgba(255,255,255,0.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.footer .footer-policy-container{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;padding-top:32px;color:rgba(255,255,255,0.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.footer .footer-policy-container .footer-policy ul{margin:0}
+.footer .footer-policy-container .footer-policy li{list-style:none;display:inline-block;font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .footer .footer-policy-container .footer-policy a{color:rgba(255,255,255,0.5) !important}
 .full-image{background-position:center;background-repeat:no-repeat;background-size:cover;display:block;width:100%}
 .newsletter{background-color:#a8925e;text-align:center;color:white;text-align:left}
@@ -115,7 +117,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .newsletter .abbo{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;text-align:right;-ms-flex-item-align:end;align-self:flex-end;margin-top:32px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .newsletter .abbo:after{content:url("../assets/img/right-arrow-white.svg");margin-left:16px}
 .kontakt{display:grid;grid-template-columns:1.5fr 1fr;color:#383838}
-.kontakt p{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
+.kontakt p{font-family:"Work Sans";font-size:20px;line-height:36px}
 .kontakt .partner-box{width:400px;margin:15px auto;background-color:#f2f2f2;display:grid;grid-template-columns:1.3fr 1fr}
 .kontakt .partner-box .partner-info{padding:20px;padding-right:8px}
 .kontakt .partner-box .partner-title{font-family:"Work Sans";font-size:12px;color:#a8925e}
@@ -201,6 +203,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .pickmeup .pmu-instance .calendar-next{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 }@media(max-width:800px){h1{font-size:32px;line-height:42px}
 h1{margin:32px 0 !important}
+li{font-size:16px;line-height:32px}
 h2{font-size:32px;line-height:42px}
 .row{padding:64px 24px;max-width:100%}
 .row-small{padding:64px 24px;max-width:100%}
@@ -238,6 +241,7 @@ h2{font-size:32px;line-height:42px}
 .newsletter #email:-ms-input-placeholder{font-size:32px;line-height:42px}
 .newsletter #email::-ms-input-placeholder{font-size:32px;line-height:42px}
 .newsletter #email::placeholder{font-size:32px;line-height:42px}
+.kontakt p{font-size:16px;line-height:32px}
 .kontakt{grid-template-columns:1fr}
 .kontakt .partner-box{width:90%;grid-template-columns:1fr}
 .blog-list .blog-list-page .blog-container .blog-info div{font-size:16px;line-height:32px}

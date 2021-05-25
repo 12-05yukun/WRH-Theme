@@ -10,7 +10,7 @@ $email=get_field( 'email', $block['partner']->ID );
 <div class='row kontakt'>
 
   <div>
-    <h3><?php echo $block['headline']?></h3>
+    <h2><?php echo $block['headline']?></h2>
     <div><?php echo $block['text']?></div>
     <?php if($block['link']){?>
      <a href='<?php echo $block['link']['url']?>'><?php echo $block['link']['title']?></a>

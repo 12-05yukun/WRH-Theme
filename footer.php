@@ -18,10 +18,7 @@
 		    <div class='footer-policy-container'>
 					 <div class='footer-copyrights'>(c) 2021 Weinromantikhotel Richtershof</div>
 					 <div class='footer-policy'> 
-                                         <?php if(get_field('datenschutz', 'option')){?><a href='<?php echo the_field('datenschutz', 'option')?>'>Datenschutz</a><?php }?>
-                               <?php if(get_field('impressum', 'option')){?>  <a href='<?php echo the_field('impressum', 'option')?>' >| Impressum </a><?php }?>
-                              <?php if(get_field('agb', 'option')){?>   <a href='<?php echo the_field('agb', 'option')?>'>| AGB </a><?php }?>
-                              <?php if(get_field('karriere', 'option')){?><a href='<?php echo the_field('karriere', 'option')?>'> | Karriere </a><?php }?>
+                                         <?php wp_nav_menu( array( 'footer-menu' => 'footer-menu') ); ?>
                                          </div>
 	      </div>
 
