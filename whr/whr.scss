@@ -102,6 +102,10 @@ a {
 	width: fit-content;
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 h1 {
 	@include headline-big();
 	@media (max-width: 800px) {
