@@ -1079,7 +1079,7 @@ h3 {
 
 .booking-bar {
 	position: fixed;
-	bottom: 4px;
+	bottom: 0px;
 	left: 50%;
 	transform: translateX(-50%);
 	width: 1100px;
@@ -1207,8 +1207,9 @@ h3 {
 
 @media (min-width: 800px) {
 	.pickmeup {
-		transform: translateY(-30px);
+		transform: translateY(-25px);
 		background-color: white !important ;
+		z-index: 999;
 		.pmu-instance {
 			height: 440px !important;
 			width: 28em !important;
@@ -1234,6 +1235,9 @@ h3 {
 			}
 			.pmu-button {
 				color: $black !important;
+				&.pmu-disabled {
+					color: #aaa !important;
+				}
 			}
 			.pmu-days {
 				padding: 0 31px;
@@ -1244,7 +1248,15 @@ h3 {
 				}
 				.pmu-button {
 					color: $black !important;
-
+					&.pmu-disabled {
+						color: #aaa !important;
+					}
+					&.pmu-not-in-month {
+						color: transparent !important;
+						&.pmu-selected {
+							background-color: white !important;
+						}
+					}
 					&.pmu-selected {
 						background: linear-gradient(
 							0deg,
@@ -1300,12 +1312,7 @@ h3 {
 						}
 					}
 				}
-				.pmu-not-in-month {
-					color: transparent !important;
-					&.pmu-selected {
-						background-color: white !important;
-					}
-				}
+
 				.pmu-today {
 					color: white !important;
 					background-color: $grey;
@@ -1334,8 +1341,9 @@ h3 {
 }
 @media (max-width: 800px) {
 	.pickmeup {
+		z-index: 999;
 		left: 50% !important;
-		transform: translate(-50%, -36px);
+		transform: translate(-50%, -33px);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -1360,17 +1368,21 @@ h3 {
 			.pmu-days {
 				.pmu-button {
 					color: $black !important;
+					&.pmu-disabled {
+						color: #aaa !important;
+					}
+					&.pmu-not-in-month {
+						color: transparent !important;
+						&.pmu-selected {
+							background-color: white !important;
+						}
+					}
 					&.pmu-selected {
 						background-color: $gold;
 						color: white !important;
 					}
 				}
-				.pmu-not-in-month {
-					color: transparent !important;
-					&.pmu-selected {
-						background-color: white !important;
-					}
-				}
+
 				.pmu-today {
 					color: white !important;
 					background-color: $grey;

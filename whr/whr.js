@@ -111,6 +111,7 @@ jQuery(document).ready(function ($) {
 		next: "<div class='calendar-next'></div>",
 		locale: "de",
 		date: [new Date(), tomorrow],
+		min: new Date(),
 	});
 
 	let time = pickmeup("#start-text-calendar").get_date('"d. b Y"');

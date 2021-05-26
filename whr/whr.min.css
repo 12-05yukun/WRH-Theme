@@ -166,7 +166,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .angebot-list .angebot-list-items .item .angebot-list-info a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 .angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail{padding:24px 0;border-bottom:1px solid rgba(0,0,0,0.5)}
 .angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail .punkt{font-family:"Work Sans";font-size:20px;line-height:36px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-repeat:no-repeat;background-position:left;background-size:24px 24px;padding-left:32px}
-.booking-bar{position:fixed;bottom:4px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:1100px;height:96px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;background-color:#383838;-webkit-box-sizing:border-box;box-sizing:border-box;padding:24px;z-index:999999999}
+.booking-bar{position:fixed;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:1100px;height:96px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;background-color:#383838;-webkit-box-sizing:border-box;box-sizing:border-box;padding:24px;z-index:999999999}
 .booking-bar .booking-calendar{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:100%}
 .booking-bar .booking-calendar .start-date-container{margin-right:48px}
 .booking-bar .booking-calendar input:focus{outline:0}
@@ -182,23 +182,25 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .booking-bar #find-room:before{content:url("../assets/img/search.svg");margin-right:8px}
 .booking-bar #table-booking{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;font-size:16px;background-color:#383838;border:1px solid #a8925e;color:#a8925e;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:12px 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .booking-bar #table-booking:before{content:url("../assets/img/dinner.svg");margin-right:8px}
-@media(min-width:800px){.pickmeup{-webkit-transform:translateY(-30px);transform:translateY(-30px);background-color:white !important}
+@media(min-width:800px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
 .pickmeup .pmu-instance nav .pmu-month{color:#383838 !important;font-family:"serif" !important;font-size:32px !important}
 .pickmeup .pmu-instance .pmu-day-of-week{border-top:1px solid #a8925e;padding-bottom:16px !important;padding-left:0 !important;padding-right:0 !important;margin:0 32px}
 .pickmeup .pmu-instance .pmu-day-of-week *{width:3.2em !important}
 .pickmeup .pmu-instance .pmu-button{color:#383838 !important}
+.pickmeup .pmu-instance .pmu-button.pmu-disabled{color:#aaa !important}
 .pickmeup .pmu-instance .pmu-days{padding:0 31px}
 .pickmeup .pmu-instance .pmu-days *{width:3.2em !important;line-height:2.1em !important;margin:.2em 0}
 .pickmeup .pmu-instance .pmu-days .pmu-button{color:#383838 !important}
+.pickmeup .pmu-instance .pmu-days .pmu-button.pmu-disabled{color:#aaa !important}
+.pickmeup .pmu-instance .pmu-days .pmu-button.pmu-not-in-month{color:transparent !important}
+.pickmeup .pmu-instance .pmu-days .pmu-button.pmu-not-in-month.pmu-selected{background-color:white !important}
 .pickmeup .pmu-instance .pmu-days .pmu-button.pmu-selected{background:-webkit-gradient(linear,left bottom,left top,from(white),color-stop(20%,white),color-stop(20%,#f2f2f2),color-stop(85%,#f2f2f2),color-stop(85%,white),to(white));background:linear-gradient(0,white,white 20%,#f2f2f2 20%,#f2f2f2 85%,white 85%,white 100%)}
 .pickmeup .pmu-instance .pmu-days .pmu-button.pmu-selected.last{position:relative;z-index:1;background-image:url(../assets/img/square.svg);background-position:left -20% top 50%;background-repeat:no-repeat;background-size:55% 80%}
 .pickmeup .pmu-instance .pmu-days .pmu-button.pmu-selected.last:after{z-index:-1;position:absolute;top:0;right:0;content:"";height:100%;width:100%;background-image:url(../assets/img/circle.svg);background-position:center;background-repeat:no-repeat;background-size:contain}
 .pickmeup .pmu-instance .pmu-days .pmu-button.pmu-selected.first{position:relative;z-index:1;background-image:url(../assets/img/square.svg);background-position:right -20% top 50%;background-repeat:no-repeat;background-size:55% 80%}
 .pickmeup .pmu-instance .pmu-days .pmu-button.pmu-selected.first:after{z-index:-1;position:absolute;top:0;right:0;content:"";height:100%;width:100%;background-image:url(../assets/img/circle.svg);background-position:center;background-repeat:no-repeat;background-size:contain}
-.pickmeup .pmu-instance .pmu-days .pmu-not-in-month{color:transparent !important}
-.pickmeup .pmu-instance .pmu-days .pmu-not-in-month.pmu-selected{background-color:white !important}
 .pickmeup .pmu-instance .pmu-days .pmu-today{color:white !important;background-color:#707070}
 .pickmeup .pmu-instance .calendar-prev{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .pickmeup .pmu-instance .calendar-next{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
@@ -253,16 +255,17 @@ h2{font-size:32px;line-height:42px}
 .angebot-list .angebot-list-items{grid-template-columns:1fr}
 .angebot-list .angebot-list-items .item .angebot-list-info .excerpt{font-size:16px;line-height:32px}
 .angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail .punkt{font-size:16px;line-height:32px}
-.pickmeup{left:50% !important;-webkit-transform:translate(-50%,-36px);transform:translate(-50%,-36px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:white !important}
+.pickmeup{z-index:999;left:50% !important;-webkit-transform:translate(-50%,-33px);transform:translate(-50%,-33px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:white !important}
 .pickmeup .pmu-instance{display:block !important;height:auto !important}
 .pickmeup .pmu-instance nav{color:#383838 !important}
 .pickmeup .pmu-instance nav .pmu-month{color:#383838 !important}
 .pickmeup .pmu-instance .pmu-day-of-week{border-top:1px solid #a8925e;padding-bottom:16px !important}
 .pickmeup .pmu-instance .pmu-button{color:#383838 !important}
 .pickmeup .pmu-instance .pmu-days .pmu-button{color:#383838 !important}
+.pickmeup .pmu-instance .pmu-days .pmu-button.pmu-disabled{color:#aaa !important}
+.pickmeup .pmu-instance .pmu-days .pmu-button.pmu-not-in-month{color:transparent !important}
+.pickmeup .pmu-instance .pmu-days .pmu-button.pmu-not-in-month.pmu-selected{background-color:white !important}
 .pickmeup .pmu-instance .pmu-days .pmu-button.pmu-selected{background-color:#a8925e;color:white !important}
-.pickmeup .pmu-instance .pmu-days .pmu-not-in-month{color:transparent !important}
-.pickmeup .pmu-instance .pmu-days .pmu-not-in-month.pmu-selected{background-color:white !important}
 .pickmeup .pmu-instance .pmu-days .pmu-today{color:white !important;background-color:#707070}
 .pickmeup .pmu-instance .calendar-prev{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .pickmeup .pmu-instance .calendar-next{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
