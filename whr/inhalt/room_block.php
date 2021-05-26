@@ -10,7 +10,7 @@
      <?php foreach($block['image_list'] as $image){?>
          <div class='block-image' style='background-image:url(<?php echo $image['image']?>)'></div>
      <?php }?>
-   </div>s
+   </div>
   <?php }else{?>
         <div class='room-slicker'>
      <?php foreach($block['image_list'] as $image){?>

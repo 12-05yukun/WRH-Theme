@@ -166,6 +166,27 @@ jQuery(document).ready(function ($) {
 				"&children=0"
 		);
 	});
+
+	var moveLeft = 20;
+	var moveDown = 10;
+
+	$(".room-ausstatt").hover(
+		function (e) {
+			$(e.target).next().show();
+			//.css('top', e.pageY + moveDown)
+			//.css('left', e.pageX + moveLeft)
+			//.appendTo('body');
+		},
+		function (e) {
+			$(e.target).next().hide();
+		}
+	);
+	$(".room-ausstatt").mousemove(function (e) {
+		$(e.target)
+			.next()
+			.css("top", e.pageY + moveDown)
+			.css("left", e.pageX + moveLeft);
+	});
 });
 
 function reveal() {

@@ -8,7 +8,7 @@ $angebots =$block['angebot']
   <p><?php echo $block['content']?></p>
   <div class='angebot-list-items'>
     <?php if ($angebots){ foreach($angebots as $angebot){ $punkte=get_field('punkte',$angebot);?>
-      <div class='item'>
+      <a class='item' href='<?php echo get_field('link',$angebot)['url']?>'>
         <div class='item-image' >
            <img src='<?php echo get_field('image',$angebot)?>' />
         </div>
@@ -21,10 +21,10 @@ $angebots =$block['angebot']
                    <?php } }?>
            </div>
            <?php if (get_field('link',$angebot)){?>
-           <a href='<?php echo  get_field('link',$angebot)['url']?>'><?php echo get_field('link',$angebot)['title']?></a>
+           <div class='more'><?php echo get_field('link',$angebot)['title']?></div>
            <?php }?>
         </div>
-    </div> 
+    </a> 
     <?php }?>
     <?php }?>
   </div>

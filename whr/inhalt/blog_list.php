@@ -13,7 +13,7 @@ $blogs = get_posts(array(
     $year=substr($date,0,4);
     $month=substr(date('F', strtotime($date)),0,3);
     ?>
-    <div class='blog-container'>
+    <a class='blog-container' href='<?php echo the_permalink($blog->ID)?>'>
       <div class='blog-image' style='background-image:url(<?php echo get_field('image',$blog)?>)'>
        <?php if($date){?>
         <div class='date-flag'>
@@ -25,10 +25,10 @@ $blogs = get_posts(array(
       </div>
       <div class='blog-info'>
         <h3><?php echo get_field('title',$blog)?></h3>
-        <div><?php echo get_field('excerpt',$blog)?></div>
-        <a href='<?php echo the_permalink($blog->ID)?>'>WEITERLESEN</a>
+        <div class='blog-text'><?php echo get_field('excerpt',$blog)?></div>
+        <div class='more'>WEITERLESEN</div>
       </div>
-    </div>
+    </a>
   <?php }?>
   </div>
 </div>

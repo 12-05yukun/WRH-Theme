@@ -14,7 +14,7 @@ $types=get_field_object('field_6098fca180deb');
   <?php foreach($rooms as $room){
         if($key==get_field('type',$room)){
     ?>
-    <div class='room-container'>
+    <a href='<?php echo the_permalink($room->ID)?>' class='room-container'>
       <div class='room-image' >
         <img src='<?php  echo get_field('image',$room)?>' />
       </div>
@@ -23,10 +23,10 @@ $types=get_field_object('field_6098fca180deb');
         <div class='excerpt'><?php echo get_field('excerpt',$room)?></div>
         <div style='display:flex;justify-content:space-between;margin-top: 36px;'>
           <p class='price'><?php echo 'ab € '.get_field('price',$room).'-- pro Zimmer'?></p>
-          <a href='<?php echo the_permalink($room->ID)?>'>WEITERLESEN</a>
+          <div class='more'>WEITERLESEN</div>
         </div>
       </div>
-    </div>
+    </a>
   <?php } }?>
   </div>
   <?php }?>

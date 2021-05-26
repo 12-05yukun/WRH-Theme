@@ -1,6 +1,9 @@
 
 <?php 
-get_header();?>
+get_header();
+$field = get_field_object('ausstattung');
+$values = get_field('ausstattung');
+?>
 
 <div class='pageheader' style='background-image:url(<?php echo get_field('image')?>)'>
   <div class='pageheader-content'>
@@ -18,7 +21,7 @@ get_header();?>
           <?php
              foreach(get_field('ausstattung') as $ausstattung){
              ?>
-               <div class='<?php echo $ausstattung?>'></div>
+               <div role="img" alt="heart" class='<?php echo $ausstattung?>'></div>
              <?php }?>    
       </div>
       <?php if(get_field('link')){?>
@@ -41,9 +44,15 @@ get_header();?>
       <div class='ausstattung-title'>AUSSTATTUNG</div>
       <div class='ausstattung-list'>
           <?php
-             foreach(get_field('ausstattung') as $ausstattung){
+            
+             foreach($field['choices'] as $choice => $label){
              ?>
-               <div class='<?php echo $ausstattung?>'></div>
+               <div role="img" alt="<?php echo $label?>" class='room-ausstatt <?php echo $choice?>'></div>
+               <div class='popup popup-<?php echo $label ?>'>
+                <p>
+                   <?php echo $label?>
+                </p>
+               </div>
              <?php }?>    
       </div>
       <?php if(get_field('link')){?>
