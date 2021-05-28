@@ -1047,6 +1047,28 @@ h3 {
 		max-width: 1000px;
 		margin: 16px auto;
 	}
+	.angebot-filters {
+		width: 80%;
+		margin: 12px auto;
+		display: flex;
+		justify-content: space-around;
+		.angebot-choice {
+			@include font-text-big();
+			padding: 8px 24px;
+			color: black;
+			background-color: $lightgrey;
+			cursor: pointer;
+			&.selected {
+				color: white;
+				background-color: $gold;
+			}
+			&:hover {
+				transition: 0.2s all;
+				color: white;
+				background-color: $gold;
+			}
+		}
+	}
 	.angebot-list-items {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -1059,10 +1081,15 @@ h3 {
 			background-color: white;
 			text-align: left;
 			color: black;
-			transition: transform 0.3s !important;
+			transition: all 0.3s !important;
+
+			display: none;
 			&:hover {
-				transition: transform 0.3s !important;
+				transition: all 0.3s !important;
 				transform: scale(1.05) !important;
+			}
+			&.visible {
+				display: block;
 			}
 			.item-image {
 				height: 30vh;
@@ -1500,6 +1527,7 @@ h3 {
 
 		.treatment-box {
 			@include font-text-big();
+			color: black;
 			padding: 32px;
 			border: 1px solid black;
 			background-color: $lightgrey;
@@ -1538,6 +1566,84 @@ h3 {
 			.price {
 				font-weight: bold;
 			}
+		}
+	}
+}
+
+.form {
+	background-color: $gold;
+	color: white;
+	display: block;
+	max-width: 100%;
+	padding: 64px 246px;
+	box-sizing: border-box;
+
+	> div {
+		@include headline-normal();
+	}
+
+	.form-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin-bottom: 32px;
+	}
+	label {
+		@include font-text-big();
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	label {
+		display: flex;
+		flex-direction: column;
+	}
+	.radio {
+		label {
+			display: block;
+		}
+		margin: 12px 0;
+		display: flex;
+		flex-direction: row;
+	}
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"] {
+		@include font-text-big();
+		border: none;
+		border-bottom: 3px solid white;
+		background-color: $gold;
+		color: white;
+		max-width: 80%;
+		padding: 0 8px;
+		&:focus {
+			outline: none;
+		}
+	}
+	textarea {
+		width: 100%;
+		margin-top: 8px;
+		width: 100%;
+		@include font-text-big();
+		padding: 8px;
+		max-height: 256px;
+		&:focus {
+			outline: none;
+		}
+	}
+	input[type="submit"] {
+		display: block;
+		padding: 8px 20px;
+		margin: 16px 0;
+		width: fit-content;
+		color: $black;
+		border: 1px $gold $black;
+		cursor: pointer;
+		@include font-text-big();
+	}
+	.wpcf7-list-item {
+		margin: 0;
+		label {
+			display: block;
 		}
 	}
 }

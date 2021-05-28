@@ -159,9 +159,14 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .room-list .room-list-page .room-container .room-info .more:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 .angebot-list{background-color:#f2f2f2;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}
 .angebot-list p{font-family:"Work Sans";font-size:20px;line-height:36px;max-width:1000px;margin:16px auto}
+.angebot-list .angebot-filters{width:80%;margin:12px auto;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}
+.angebot-list .angebot-filters .angebot-choice{font-family:"Work Sans";font-size:20px;line-height:36px;padding:8px 24px;color:black;background-color:#f2f2f2;cursor:pointer}
+.angebot-list .angebot-filters .angebot-choice.selected{color:white;background-color:#a8925e}
+.angebot-list .angebot-filters .angebot-choice:hover{-webkit-transition:.2s all;transition:.2s all;color:white;background-color:#a8925e}
 .angebot-list .angebot-list-items{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:48px;margin-top:32px}
-.angebot-list .angebot-list-items .item{background-color:white;text-align:left;color:black;-webkit-transition:-webkit-transform .3s !important;transition:-webkit-transform .3s !important;transition:transform .3s !important;transition:transform .3s,-webkit-transform .3s !important}
-.angebot-list .angebot-list-items .item:hover{-webkit-transition:-webkit-transform .3s !important;transition:-webkit-transform .3s !important;transition:transform .3s !important;transition:transform .3s,-webkit-transform .3s !important;-webkit-transform:scale(1.05) !important;transform:scale(1.05) !important}
+.angebot-list .angebot-list-items .item{background-color:white;text-align:left;color:black;-webkit-transition:all .3s !important;transition:all .3s !important;display:none}
+.angebot-list .angebot-list-items .item:hover{-webkit-transition:all .3s !important;transition:all .3s !important;-webkit-transform:scale(1.05) !important;transform:scale(1.05) !important}
+.angebot-list .angebot-list-items .item.visible{display:block}
 .angebot-list .angebot-list-items .item .item-image{height:30vh;display:-webkit-box;display:-ms-flexbox;display:flex}
 .angebot-list .angebot-list-items .item .item-image img{width:100%;height:auto;-o-object-fit:cover;object-fit:cover}
 .angebot-list .angebot-list-items .item .angebot-list-info{padding:32px}
@@ -189,12 +194,27 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .booking-bar #table-booking:before{content:url("../assets/img/dinner.svg");margin-right:8px}
 .treatments{padding:64px 196px}
 .treatments .treatments-container{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:24px}
-.treatments .treatments-container .treatment-box{font-family:"Work Sans";font-size:20px;line-height:36px;padding:32px;border:1px solid black;background-color:#f2f2f2;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;transition:all .3s !important}
+.treatments .treatments-container .treatment-box{font-family:"Work Sans";font-size:20px;line-height:36px;color:black;padding:32px;border:1px solid black;background-color:#f2f2f2;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;transition:all .3s !important}
 .treatments .treatments-container .treatment-box:hover{-webkit-transform:scale(1.05) !important;transform:scale(1.05) !important;-webkit-transition:all .3s !important;transition:all .3s !important}
 .treatments .treatments-container .treatment-box:hover:before{background-color:rgba(255,255,255,0.8);content:"Buchen";position:absolute;height:100%;width:100%;top:0;left:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-family:"Noto Serif",serif;font-size:60px;margin:16px 0;line-height:80px;font-weight:normal;color:#a8925e;margin:0}
 .treatments .treatments-container .treatment-box>div{padding:2px 0}
 .treatments .treatments-container .treatment-box .title{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;margin-bottom:16px}
 .treatments .treatments-container .treatment-box .price{font-weight:bold}
+.form{background-color:#a8925e;color:white;display:block;max-width:100%;padding:64px 246px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.form>div{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.form .form-container{display:grid;grid-template-columns:1fr 1fr;margin-bottom:32px}
+.form label{font-family:"Work Sans";font-size:20px;line-height:36px}
+.form p{margin-bottom:20px}
+.form label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.form .radio{margin:12px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
+.form .radio label{display:block}
+.form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-family:"Work Sans";font-size:20px;line-height:36px;border:0;border-bottom:3px solid white;background-color:#a8925e;color:white;max-width:80%;padding:0 8px}
+.form input[type="text"]:focus,.form input[type="email"]:focus,.form input[type="tel"]:focus{outline:0}
+.form textarea{width:100%;margin-top:8px;width:100%;font-family:"Work Sans";font-size:20px;line-height:36px;padding:8px;max-height:256px}
+.form textarea:focus{outline:0}
+.form input[type="submit"]{display:block;padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:#383838;border:1px #a8925e #383838;cursor:pointer;font-family:"Work Sans";font-size:20px;line-height:36px}
+.form .wpcf7-list-item{margin:0}
+.form .wpcf7-list-item label{display:block}
 @media(min-width:800px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
@@ -265,6 +285,7 @@ h2{font-size:32px;line-height:42px}
 .room-list .room-list-page .room-container .room-info .excerpt{font-size:16px;line-height:32px}
 .room-list .room-list-page{grid-template-columns:1fr}
 .angebot-list p{font-size:16px;line-height:32px}
+.angebot-list .angebot-filters .angebot-choice{font-size:16px;line-height:32px}
 .angebot-list .angebot-list-items{grid-template-columns:1fr}
 .angebot-list .angebot-list-items .item .angebot-list-info .excerpt{font-size:16px;line-height:32px}
 .angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail .punkt{font-size:16px;line-height:32px}
@@ -291,4 +312,9 @@ h2{font-size:32px;line-height:42px}
 .booking-bar .button-group #table-booking{font-size:12px;width:50%}
 .treatments .treatments-container .treatment-box{font-size:16px;line-height:32px}
 .treatments .treatments-container .treatment-box:hover:before{font-size:32px;line-height:42px}
+.form>div{font-size:32px;line-height:42px}
+.form label{font-size:16px;line-height:32px}
+.form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-size:16px;line-height:32px}
+.form textarea{font-size:16px;line-height:32px}
+.form input[type="submit"]{font-size:16px;line-height:32px}
 }

@@ -1,14 +1,24 @@
 <?php 
-$angebots =$block['angebot']
-
+$angebots =$block['angebot'];
+$filters=get_field_object('field_60b0a67bba69f');
 ?>
 
 <div class='row angebot-list'>
   <h1><?php echo $block['headline']?></h1>
   <p><?php echo $block['content']?></p>
+  <div class='angebot-filters'>
+        <div choice='all' class='angebot-choice selected'>
+               Alle
+        </div>
+     <?php foreach($filters['choices'] as $key => $choice){?>
+        <div choice='<?php echo $key?>' class='angebot-choice'>
+                <?php echo $choice?>
+        </div>
+     <?php }?>     
+  </div>
   <div class='angebot-list-items'>
     <?php if ($angebots){ foreach($angebots as $angebot){ $punkte=get_field('punkte',$angebot);?>
-      <a class='item' href='<?php echo get_field('link',$angebot)['url']?>'>
+      <a class='all item visible <?php foreach(get_field('kategorie',$angebot) as $kat){echo ' '.$kat;}?>' href='<?php echo get_field('link',$angebot)['url']?>'>
         <div class='item-image' >
            <img src='<?php echo get_field('image',$angebot)?>' />
         </div>
@@ -39,5 +49,15 @@ jQuery(document).ready(function ($) {
 		
 	});
         ScrollReveal().reveal('.item', { origin: "bottom",distance: "20px",delay: 200,interval: 200 });
+
+        $('.angebot-choice').click(function(e){
+                $('.angebot-choice.selected').removeClass('selected');
+                $(e.target).addClass("selected");
+                let choice=$(e.target).attr("choice");
+                $(`.item`).removeClass('visible')
+                $(`.item.${choice}`).addClass('visible')
+        })
+
+       
 })
 </script>
