@@ -6,7 +6,8 @@ $filters=get_field_object('field_60b0a67bba69f');
 <div class='row angebot-list'>
   <h1><?php echo $block['headline']?></h1>
   <p><?php echo $block['content']?></p>
-  <div class='angebot-filters'>
+  <div class='angebot-filters-container'>
+          <div class='angebot-filters'>
         <div choice='all' class='angebot-choice selected'>
                Alle
         </div>
@@ -15,6 +16,7 @@ $filters=get_field_object('field_60b0a67bba69f');
                 <?php echo $choice?>
         </div>
      <?php }?>     
+     </div>
   </div>
   <div class='angebot-list-items'>
     <?php if ($angebots){ foreach($angebots as $angebot){ $punkte=get_field('punkte',$angebot);?>

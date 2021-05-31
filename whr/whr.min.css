@@ -210,7 +210,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .form .radio label{display:block}
 .form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-family:"Work Sans";font-size:20px;line-height:36px;border:0;border-bottom:3px solid white;background-color:#a8925e;color:white;max-width:80%;padding:0 8px}
 .form input[type="text"]:focus,.form input[type="email"]:focus,.form input[type="tel"]:focus{outline:0}
-.form textarea{width:100%;margin-top:8px;width:100%;font-family:"Work Sans";font-size:20px;line-height:36px;padding:8px;max-height:256px}
+.form textarea{margin-top:8px;width:100%;font-family:"Work Sans";font-size:20px;line-height:36px;padding:8px;max-height:256px}
 .form textarea:focus{outline:0}
 .form input[type="submit"]{display:block;padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:#383838;border:1px #a8925e #383838;cursor:pointer;font-family:"Work Sans";font-size:20px;line-height:36px}
 .form .wpcf7-list-item{margin:0}
@@ -285,6 +285,8 @@ h2{font-size:32px;line-height:42px}
 .room-list .room-list-page .room-container .room-info .excerpt{font-size:16px;line-height:32px}
 .room-list .room-list-page{grid-template-columns:1fr}
 .angebot-list p{font-size:16px;line-height:32px}
+.angebot-list .angebot-filters-container{width:90vw;overflow:scroll}
+.angebot-list .angebot-filters-container .angebot-filters{-webkit-box-pack:normal;-ms-flex-pack:normal;justify-content:normal;padding-right:20px}
 .angebot-list .angebot-filters .angebot-choice{font-size:16px;line-height:32px}
 .angebot-list .angebot-list-items{grid-template-columns:1fr}
 .angebot-list .angebot-list-items .item .angebot-list-info .excerpt{font-size:16px;line-height:32px}
@@ -317,4 +319,7 @@ h2{font-size:32px;line-height:42px}
 .form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-size:16px;line-height:32px}
 .form textarea{font-size:16px;line-height:32px}
 .form input[type="submit"]{font-size:16px;line-height:32px}
+.form{padding:64px 16px}
+.form .form-container{grid-template-columns:1fr}
+.form textarea{width:90%}
 }
