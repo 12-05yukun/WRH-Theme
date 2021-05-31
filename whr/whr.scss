@@ -455,6 +455,9 @@ h3 {
 		.block-content {
 			padding: 24px;
 		}
+		.block-image {
+			min-height: 35vh;
+		}
 	}
 }
 
@@ -502,6 +505,9 @@ h3 {
 		grid-template-columns: 1fr !important;
 		.block-content {
 			padding: 24px;
+		}
+		.block-image {
+			min-height: 35vh;
 		}
 	}
 }
@@ -591,13 +597,16 @@ h3 {
 		}
 		@media (max-width: 800px) {
 			flex-direction: column;
-			.blok-content {
-				width: 100vw;
+			.block-content {
+				width: 90% !important;
 			}
 			.room-slicker {
 				display: block;
 				width: 100vw;
 				height: 40vh;
+			}
+			.block-image {
+				opacity: 1 !important;
 			}
 		}
 	}
@@ -727,7 +736,7 @@ h3 {
 .footer {
 	background-color: $black;
 	color: white;
-	padding: 80px 320px;
+	padding: 80px 320px 160px 320px;
 	display: flex;
 	flex-direction: column;
 	.footer-info {
@@ -763,6 +772,7 @@ h3 {
 	}
 	@media (max-width: 800px) {
 		padding: 16px;
+		padding-bottom: 156px;
 		.footer-info {
 			grid-template-columns: 1fr;
 		}
@@ -1586,10 +1596,12 @@ h3 {
 	background-color: $gold;
 	color: white;
 	display: block;
-	max-width: 100%;
+
 	padding: 64px 246px;
 	box-sizing: border-box;
-
+	.wpcf7 {
+		max-width: 1100px;
+	}
 	> div {
 		@include headline-normal();
 	}
@@ -1627,6 +1639,7 @@ h3 {
 		color: white;
 		max-width: 80%;
 		padding: 0 8px;
+		width: 100%;
 		&:focus {
 			outline: none;
 		}

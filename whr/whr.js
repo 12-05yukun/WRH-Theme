@@ -203,6 +203,7 @@ function reveal() {
 	ScrollReveal().reveal(".block-image", {
 		delay: 200,
 	});
+
 	ScrollReveal().reveal(".left .block-content", {
 		delay: 200,
 		origin: "right",

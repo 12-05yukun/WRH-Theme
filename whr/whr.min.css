@@ -101,7 +101,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .pageheader:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);height:66vh}
 .pageheader .pageheader-content{position:absolute;top:40vh;left:128px;max-width:660px}
 .pageheader .pageheader-content .content-text{font-family:"Work Sans";font-size:20px;line-height:36px}
-.footer{background-color:#383838;color:white;padding:80px 320px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.footer{background-color:#383838;color:white;padding:80px 320px 160px 320px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .footer .footer-info{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid rgba(255,255,255,0.5);padding-bottom:32px;font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal}
 .footer .footer-info .footer-erleben{max-width:300px}
 .footer .footer-policy-container{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;padding-top:32px;color:rgba(255,255,255,0.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
@@ -200,7 +200,8 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .treatments .treatments-container .treatment-box>div{padding:2px 0}
 .treatments .treatments-container .treatment-box .title{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;margin-bottom:16px}
 .treatments .treatments-container .treatment-box .price{font-weight:bold}
-.form{background-color:#a8925e;color:white;display:block;max-width:100%;padding:64px 246px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.form{background-color:#a8925e;color:white;display:block;padding:64px 246px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.form .wpcf7{max-width:1100px}
 .form>div{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
 .form .form-container{display:grid;grid-template-columns:1fr 1fr;margin-bottom:32px}
 .form label{font-family:"Work Sans";font-size:20px;line-height:36px}
@@ -208,7 +209,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .form label{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .form .radio{margin:12px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .form .radio label{display:block}
-.form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-family:"Work Sans";font-size:20px;line-height:36px;border:0;border-bottom:3px solid white;background-color:#a8925e;color:white;max-width:80%;padding:0 8px}
+.form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-family:"Work Sans";font-size:20px;line-height:36px;border:0;border-bottom:3px solid white;background-color:#a8925e;color:white;max-width:80%;padding:0 8px;width:100%}
 .form input[type="text"]:focus,.form input[type="email"]:focus,.form input[type="tel"]:focus{outline:0}
 .form textarea{margin-top:8px;width:100%;font-family:"Work Sans";font-size:20px;line-height:36px;padding:8px;max-height:256px}
 .form textarea:focus{outline:0}
@@ -254,13 +255,16 @@ h2{font-size:32px;line-height:42px}
 .block .block-content .link{font-size:16px;line-height:32px}
 .block{grid-template-columns:1fr !important}
 .block .block-content{padding:24px}
+.block .block-image{min-height:35vh}
 .halfblock .block-content p{font-size:16px;line-height:32px}
 .halfblock .block-content .link{font-size:16px;line-height:32px}
 .halfblock{grid-template-columns:1fr !important}
 .halfblock .block-content{padding:24px}
+.halfblock .block-image{min-height:35vh}
 .halfblock.room-block{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.halfblock.room-block .blok-content{width:100vw}
+.halfblock.room-block .block-content{width:90% !important}
 .halfblock.room-block .room-slicker{display:block;width:100vw;height:40vh}
+.halfblock.room-block .block-image{opacity:1 !important}
 .content-group p{font-size:16px;line-height:32px}
 .content-group .content-group-items{grid-template-columns:1fr}
 .quote .content{font-size:32px;line-height:42px}
@@ -268,7 +272,7 @@ h2{font-size:32px;line-height:42px}
 .fulltext p{font-size:16px;line-height:32px}
 .pageheader .pageheader-content .content-text{font-size:16px;line-height:32px}
 .pageheader .pageheader-content{left:32px}
-.footer{padding:16px}
+.footer{padding:16px;padding-bottom:156px}
 .footer .footer-info{grid-template-columns:1fr}
 .newsletter #email{font-size:16px;line-height:32px}
 .newsletter #email{font-size:32px;line-height:42px}
