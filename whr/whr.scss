@@ -1680,3 +1680,117 @@ h3 {
 		}
 	}
 }
+
+.partner-list {
+	.partner-list-container {
+		display: flex;
+		align-items: center;
+		.partner-list-box {
+			margin-right: 48px;
+			margin-top: 32px;
+			display: block;
+			img {
+				display: block;
+				z-index: 1;
+				transition: all 0.3s !important;
+				max-height: 160px;
+				&:hover {
+					transition: all 0.3s !important;
+					transform: scale(1.1) !important;
+				}
+			}
+		}
+		.partner-popup {
+			display: none;
+			position: absolute;
+			width: fit-content;
+			padding: 3px 5px;
+			color: rgba(#000, 0.8);
+			z-index: 99;
+			background-color: $lightgrey;
+			@include font-text-small();
+		}
+	}
+}
+
+.routen-planer {
+	text-align: center;
+	text-align: left;
+	background-color: $lightgrey;
+	color: $gold;
+	.routen-planer-box {
+		display: flex;
+		justify-content: right;
+		flex-direction: column;
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	#start-place {
+		display: block;
+		box-sizing: border-box;
+		@include font-text-big();
+		width: 100%;
+		background-color: transparent;
+		padding: 16px 24px;
+		border: none;
+		border-bottom: 3px solid $gold;
+
+		@include headline-normal();
+		&::placeholder {
+			color: rgba(#000, 0.5);
+			@include headline-normal();
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	#google-map {
+		width: fit-content;
+		text-align: right;
+		align-self: flex-end;
+		margin-top: 32px;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		@include font-text-big();
+		&:after {
+			content: url("../assets/img/right-arrow.svg");
+			margin-left: 16px;
+			margin-top: 12px;
+		}
+	}
+}
+
+.download {
+	.download-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		.download-box {
+			.download-image {
+				height: 200px;
+				display: flex;
+				align-items: center;
+				img {
+					max-height: 100%;
+				}
+			}
+			.download-title {
+				margin-top: 16px;
+				@include font-text-big();
+			}
+			a {
+				@include font-text();
+				margin-top: 16px;
+				color: $gold;
+				display: flex;
+				&:after {
+					content: url("../assets/img/right-arrow.svg");
+					margin-left: 16px;
+				}
+			}
+		}
+		@media (max-width: 800px) {
+			grid-template-columns: 1fr;
+		}
+	}
+}

@@ -216,6 +216,28 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .form input[type="submit"]{display:block;padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:#383838;border:1px #a8925e #383838;cursor:pointer;font-family:"Work Sans";font-size:20px;line-height:36px}
 .form .wpcf7-list-item{margin:0}
 .form .wpcf7-list-item label{display:block}
+.partner-list .partner-list-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.partner-list .partner-list-container .partner-list-box{margin-right:48px;margin-top:32px;display:block}
+.partner-list .partner-list-container .partner-list-box img{display:block;z-index:1;-webkit-transition:all .3s !important;transition:all .3s !important;max-height:160px}
+.partner-list .partner-list-container .partner-list-box img:hover{-webkit-transition:all .3s !important;transition:all .3s !important;-webkit-transform:scale(1.1) !important;transform:scale(1.1) !important}
+.partner-list .partner-list-container .partner-popup{display:none;position:absolute;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:3px 5px;color:rgba(0,0,0,0.8);z-index:99;background-color:#f2f2f2;font-family:"Work Sans";font-size:12px}
+.routen-planer{text-align:center;text-align:left;background-color:#f2f2f2;color:#a8925e}
+.routen-planer .routen-planer-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:right;-ms-flex-pack:right;justify-content:right;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;max-width:600px;margin:0 auto}
+.routen-planer #start-place{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:"Work Sans";font-size:20px;line-height:36px;width:100%;background-color:transparent;padding:16px 24px;border:0;border-bottom:3px solid #a8925e;font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.routen-planer #start-place::-webkit-input-placeholder{color:rgba(0,0,0,0.5);font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.routen-planer #start-place::-moz-placeholder{color:rgba(0,0,0,0.5);font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.routen-planer #start-place:-ms-input-placeholder{color:rgba(0,0,0,0.5);font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.routen-planer #start-place::-ms-input-placeholder{color:rgba(0,0,0,0.5);font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.routen-planer #start-place::placeholder{color:rgba(0,0,0,0.5);font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.routen-planer #start-place:focus{outline:0}
+.routen-planer #google-map{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;text-align:right;-ms-flex-item-align:end;align-self:flex-end;margin-top:32px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;font-family:"Work Sans";font-size:20px;line-height:36px}
+.routen-planer #google-map:after{content:url("../assets/img/right-arrow.svg");margin-left:16px;margin-top:12px}
+.download .download-list{display:grid;grid-template-columns:1fr 1fr 1fr}
+.download .download-list .download-box .download-image{height:200px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.download .download-list .download-box .download-image img{max-height:100%}
+.download .download-list .download-box .download-title{margin-top:16px;font-family:"Work Sans";font-size:20px;line-height:36px}
+.download .download-list .download-box a{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;margin-top:16px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
+.download .download-list .download-box a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 @media(min-width:800px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
@@ -326,4 +348,14 @@ h2{font-size:32px;line-height:42px}
 .form{padding:64px 16px}
 .form .form-container{grid-template-columns:1fr}
 .form textarea{width:90%}
+.routen-planer #start-place{font-size:16px;line-height:32px}
+.routen-planer #start-place{font-size:32px;line-height:42px}
+.routen-planer #start-place::-webkit-input-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::-moz-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place:-ms-input-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::-ms-input-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::placeholder{font-size:32px;line-height:42px}
+.routen-planer #google-map{font-size:16px;line-height:32px}
+.download .download-list .download-box .download-title{font-size:16px;line-height:32px}
+.download .download-list{grid-template-columns:1fr}
 }
