@@ -35,7 +35,7 @@
 				  <div class='header-menu-bar' >
 						<a href='<?php echo get_field('kontakt','option')?>'>KONTAKT</a>
 						<a href='<?php echo get_field('buchen','option')?>'>BUCHEN</a>
-						<a href='#'>DE</a>
+						<div id="weglot_here"></div>
 						<div id='header-burger'></div>
 					</div>
 					

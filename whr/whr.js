@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
 	reveal();
 	var pathname = window.location.pathname;
-	if (pathname == "/") {
+	if (pathname == "/" || pathname == "/en/" || pathname == "/de/") {
 		$(window).scroll(function (event) {
 			if (pageYOffset >= window.innerHeight * 0.66) {
 				$("#header").removeClass("top");

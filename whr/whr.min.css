@@ -23,7 +23,14 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .header.top .icon-bar img{height:24px;margin-right:12px}
 .header.top .header-menu-bar{background-color:transparent}
 .header.top .header-menu-bar a{color:white}
+.header.top .country-selector.weglot-dropdown .wgcurrent a,.header.top .country-selector.weglot-dropdown .wgcurrent span{color:white}
+.header.top .country-selector.weglot-dropdown ul{background-color:transparent;border:0}
 .header #header-burger{background-color:white;background-image:url("../assets/img/menu.svg");height:42px;width:42px;border-radius:50%;background-position:center;background-repeat:no-repeat;background-size:40%;cursor:pointer}
+.header .country-selector.weglot-dropdown{background-color:transparent !important}
+.header .country-selector.weglot-dropdown .wgcurrent{border:none !important}
+.header .country-selector.weglot-dropdown .wgcurrent:after{display:none !important}
+.header .country-selector.weglot-dropdown .wgcurrent a,.header .country-selector.weglot-dropdown .wgcurrent span{padding-right:0;font-family:"Work Sans";font-size:16px !important;font-weight:normal;background-color:transparent}
+.header .country-selector.weglot-dropdown a,.header .country-selector.weglot-dropdown span{font-family:"Work Sans";font-size:16px !important;font-weight:normal;background-color:transparent}
 #menu{z-index:999;height:100vh;width:33vw;background-color:#a8925e;position:fixed;top:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
 #menu #header-burger-close{position:absolute;top:32px;right:48px;background-image:url("../assets/img/menu-close.svg");height:48px;width:48px;background-position:center;background-repeat:no-repeat;background-size:35%;background-color:transparent;background-color:white;border-radius:50%;cursor:pointer}
 #menu.open{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transition:all .3s ease-in;transition:all .3s ease-in}

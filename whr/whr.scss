@@ -220,6 +220,14 @@ h3 {
 				color: white;
 			}
 		}
+		.country-selector.weglot-dropdown .wgcurrent a,
+		.country-selector.weglot-dropdown .wgcurrent span {
+			color: white;
+		}
+		.country-selector.weglot-dropdown ul {
+			background-color: transparent;
+			border: none;
+		}
 	}
 
 	#header-burger {
@@ -232,6 +240,31 @@ h3 {
 		background-repeat: no-repeat;
 		background-size: 40%;
 		cursor: pointer;
+	}
+	.country-selector.weglot-dropdown {
+		background-color: transparent !important;
+	}
+	.country-selector.weglot-dropdown .wgcurrent {
+		border: none !important;
+
+		&:after {
+			display: none !important;
+		}
+	}
+	.country-selector.weglot-dropdown .wgcurrent a,
+	.country-selector.weglot-dropdown .wgcurrent span {
+		padding-right: 0;
+		font-family: "Work Sans";
+		font-size: 16px !important;
+		font-weight: normal;
+		background-color: transparent;
+	}
+	.country-selector.weglot-dropdown a,
+	.country-selector.weglot-dropdown span {
+		font-family: "Work Sans";
+		font-size: 16px !important;
+		font-weight: normal;
+		background-color: transparent;
 	}
 	@media (max-width: 800px) {
 		.header-menu-bar {
