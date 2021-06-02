@@ -27,8 +27,11 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 #menu{z-index:999;height:100vh;width:33vw;background-color:#a8925e;position:fixed;top:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
 #menu #header-burger-close{position:absolute;top:32px;right:48px;background-image:url("../assets/img/menu-close.svg");height:48px;width:48px;background-position:center;background-repeat:no-repeat;background-size:35%;background-color:transparent;background-color:white;border-radius:50%;cursor:pointer}
 #menu.open{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transition:all .3s ease-in;transition:all .3s ease-in}
-#menu li{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;list-style:none;margin-top:22px;position:relative;margin-bottom:4px}
+#menu li{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;list-style:none;margin-top:22px;position:relative;margin-bottom:4px;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
 #menu .menu-item-has-children .toggle{content:"";cursor:pointer;position:absolute;left:-24px;top:8px;width:16px;height:16px;background-image:url(../assets/img/calendar-arrow-black.svg);background-size:contain;background-position:center;background-repeat:no-repeat}
+#menu .menu-item{display:block}
+#menu .line{display:block;width:0;height:1px;position:absolute;bottom:0;left:0;background-color:white;-webkit-transition:.2s all;transition:.2s all}
+#menu .line.menu-hover-underline{width:100%;-webkit-transition:.2s all;transition:.2s all}
 #menu .sub-menu{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;max-height:0;overflow:hidden}
 #menu .sub-menu.open{-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;max-height:500px;display:block}
 #menu li.current-menu-item>a{border-bottom:1px solid white}
@@ -236,7 +239,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .download .download-list .download-box .download-image{height:200px;display:-webkit-box;display:-ms-flexbox;display:flex}
 .download .download-list .download-box .download-image img{max-height:100%}
 .download .download-list .download-box .download-title{margin-top:16px;font-family:"Work Sans";font-size:20px;line-height:36px}
-.download .download-list .download-box a{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;margin-top:16px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
+.download .download-list .download-box a{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
 .download .download-list .download-box a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 @media(min-width:800px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}

@@ -167,6 +167,17 @@ jQuery(document).ready(function ($) {
 		);
 	});
 
+	$(".menu-item-object-page").append('<div class="line"></div>');
+
+	$(".menu-item-object-page a").hover(
+		function (e) {
+			$(e.target).next().addClass("menu-hover-underline");
+		},
+		function (e) {
+			$(e.target).next().removeClass("menu-hover-underline");
+		}
+	);
+
 	var moveLeft = 20;
 	var moveDown = 10;
 
