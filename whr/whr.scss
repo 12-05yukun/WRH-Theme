@@ -1767,11 +1767,12 @@ h3 {
 	.download-list {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 16px;
 		.download-box {
 			.download-image {
 				height: 200px;
 				display: flex;
-				align-items: center;
+
 				img {
 					max-height: 100%;
 				}

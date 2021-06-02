@@ -12,3 +12,14 @@
            <?php }?>
         </div>
 </div>
+
+<script>
+jQuery(document).ready(function ($) {
+        ScrollReveal().reveal(".download h1", {
+		delay: 200,
+		origin: "bottom",
+		distance: "20px",
+	});
+        ScrollReveal().reveal('.download-box', { origin: "bottom",distance: "20px",delay: 200,interval: 200 });
+})
+</script>
