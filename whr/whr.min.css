@@ -216,7 +216,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .form input[type="submit"]{display:block;padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:#383838;border:1px #a8925e #383838;cursor:pointer;font-family:"Work Sans";font-size:20px;line-height:36px}
 .form .wpcf7-list-item{margin:0}
 .form .wpcf7-list-item label{display:block}
-.partner-list .partner-list-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.partner-list .partner-list-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%}
 .partner-list .partner-list-container .partner-list-box{margin-right:48px;margin-top:32px;display:block}
 .partner-list .partner-list-container .partner-list-box img{display:block;z-index:1;-webkit-transition:all .3s !important;transition:all .3s !important;max-height:160px}
 .partner-list .partner-list-container .partner-list-box img:hover{-webkit-transition:all .3s !important;transition:all .3s !important;-webkit-transform:scale(1.1) !important;transform:scale(1.1) !important}

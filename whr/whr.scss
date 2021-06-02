@@ -1685,6 +1685,8 @@ h3 {
 	.partner-list-container {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
+		width: 100%;
 		.partner-list-box {
 			margin-right: 48px;
 			margin-top: 32px;
