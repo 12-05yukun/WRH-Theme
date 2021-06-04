@@ -41,20 +41,22 @@ $values = get_field('ausstattung');
      </div>
     <div class='block-content'>
       <?php echo get_field('text')?>
+      <?php if($field['choices']){?>
       <div class='ausstattung-title'>AUSSTATTUNG</div>
       <div class='ausstattung-list'>
-          <?php
-            
+          <?php   
              foreach($field['choices'] as $choice => $label){
              ?>
+              <?php if(in_array($choice,$values)){ ?>
                <div role="img" alt="<?php echo $label?>" class='room-ausstatt <?php echo $choice?>'></div>
                <div class='popup popup-<?php echo $label ?>'>
                 <p>
                    <?php echo $label?>
                 </p>
                </div>
-             <?php }?>    
+             <?php }}?>    
       </div>
+      <?php }?>
       <?php if(get_field('link')){?>
          <a href='<?php echo get_field('link')['url']?>'><?php echo get_field('link')['title']?></a>
       <?php }?>

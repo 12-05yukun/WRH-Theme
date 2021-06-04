@@ -81,6 +81,11 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .halfblock.room-block .block-content .ausstattung-list .TV{background-image:url(../assets/img/tv.svg)}
 .halfblock.room-block .block-content .ausstattung-list .dusche{background-image:url(../assets/img/shower.svg)}
 .halfblock.room-block .block-content .ausstattung-list .wifi{background-image:url(../assets/img/wifi.svg)}
+.halfblock.room-block .block-content .ausstattung-list .water{background-image:url(../assets/img/water.svg)}
+.halfblock.room-block .block-content .ausstattung-list .shoe{background-image:url(../assets/img/shoe-brush.svg)}
+.halfblock.room-block .block-content .ausstattung-list .sleep{background-image:url(../assets/img/turndown.svg)}
+.halfblock.room-block .block-content .ausstattung-list .news{background-image:url(../assets/img/newspaper.svg)}
+.halfblock.room-block .block-content .ausstattung-list .spa{background-image:url(../assets/img/spa.svg)}
 .halfblock.room-block .block-content .ausstattung-list .popup{display:none;position:absolute;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding:3px 5px;color:rgba(0,0,0,0.5);font-family:"Work Sans";font-size:12px}
 .halfblock.room-block .room-slicker{display:block;width:50vw;height:auto}
 .halfblock.room-block .room-slicker .slick-list{height:100% !important}
