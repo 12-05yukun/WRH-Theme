@@ -248,6 +248,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .download .download-list .download-box .download-title{margin-top:16px;font-family:"Work Sans";font-size:20px;line-height:36px}
 .download .download-list .download-box a{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
 .download .download-list .download-box a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
+.googlemap{width:100%;height:45vh}
 @media(min-width:800px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
