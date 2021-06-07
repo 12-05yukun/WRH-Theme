@@ -1,7 +1,4 @@
 <div class='row partner-list'>
-        <h1>
-            PARTNER & AUSZEICHNUNGEN
-        </h1>
         <div class='partner-list-container'>
         <?php foreach($block['partner'] as $partner){?>
                 <a class='partner-list-box' href='<?php echo $partner['link']?>'>
