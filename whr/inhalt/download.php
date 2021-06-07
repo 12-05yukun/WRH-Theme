@@ -1,5 +1,4 @@
 <div class='row download'>
-        <h1>Unsere Broschüren</h1>
         <div class='download-list'>
            <?php foreach($block['downloads'] as $download){?>
                 <div class='download-box'>
