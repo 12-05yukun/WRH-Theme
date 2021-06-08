@@ -257,8 +257,8 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .joblist .joblist-filter{display:-webkit-box;display:-ms-flexbox;display:flex;padding-bottom:24px}
 .joblist .joblist-filter .filter-button{display:block;padding:8px 20px;margin:16px 0;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;color:#a8925e;cursor:pointer;border:1px solid #a8925e;font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;margin-right:16px;cursor:pointer}
 .joblist .joblist-filter .filter-button.selected{color:white;background-color:#a8925e}
-.joblist .joblist-container{display:-webkit-box;display:-ms-flexbox;display:flex}
-.joblist .joblist-container .job-container{color:#383838;width:100%;padding:32px 64px;-webkit-box-shadow:0 1px 3px 0 rgba(36,37,42,0.55);box-shadow:0 1px 3px 0 rgba(36,37,42,0.55);border:solid 1px rgba(9,30,66,0.1);margin-bottom:32px;background-color:#f2f2f2;-webkit-transition:all .3s;transition:all .3s}
+.joblist .joblist-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.joblist .joblist-container .job-container{color:#383838;width:100%;padding:32px 64px;-webkit-box-shadow:0 1px 3px 0 rgba(36,37,42,0.55);box-shadow:0 1px 3px 0 rgba(36,37,42,0.55);border:solid 1px rgba(9,30,66,0.1);margin-bottom:24px;background-color:#f2f2f2;-webkit-transition:all .3s;transition:all .3s}
 .joblist .joblist-container .job-container .title{font-family:"Noto Serif",serif;font-size:24px;font-weight:normal;margin-bottom:16px}
 .joblist .joblist-container .job-container .ort{font-family:"Work Sans";font-size:20px;line-height:36px}
 .joblist .joblist-container .job-container .start{font-family:"Work Sans";font-size:20px;line-height:36px}
