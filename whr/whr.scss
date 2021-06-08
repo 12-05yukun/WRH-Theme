@@ -1894,6 +1894,7 @@ h3 {
 		flex-direction: column;
 		.job-container {
 			color: $black;
+			box-sizing: border-box;
 			width: 100%;
 			padding: 32px 64px;
 			box-shadow: 0 1px 3px 0 rgba(36, 37, 42, 0.55);
@@ -1913,7 +1914,6 @@ h3 {
 			}
 			&:hover {
 				transition: all 0.3s;
-
 				color: white;
 				background-color: $gold;
 			}
@@ -1922,4 +1922,12 @@ h3 {
 			display: none;
 		}
 	}
+}
+
+.notfound {
+	height: 70vh;
+	display: flex;
+	@include headline-big();
+	align-items: center;
+	justify-content: center;
 }
