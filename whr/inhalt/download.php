@@ -1,4 +1,5 @@
 <div class='row download'>
+        <h1><?php echo $block['title']?></h1>
         <div class='download-list'>
            <?php foreach($block['downloads'] as $download){?>
                 <div class='download-box'>
@@ -6,7 +7,7 @@
                                 <img src='<?php echo $download['image']?>' />
                         </div>
                         <div class='download-title'><?php echo $download['title']?></div>
-                        <a target='__blank' href='<?php echo $download['link']?>' download>Herunterladen</a>
+                        <a target='__blank' href='<?php echo $download['link']['url']?>' download><?php if( $download['link']['caption']){echo $download['link']['caption'];}else{echo 'Herunterladen';}?></a>
                 </div>
            <?php }?>
         </div>

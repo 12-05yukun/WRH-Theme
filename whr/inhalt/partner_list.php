@@ -1,4 +1,7 @@
 <div class='row partner-list'>
+        <?php if($block['title']){?>
+        <h1><?php echo $block['title']?></h1>
+        <?php }?>
         <div class='partner-list-container'>
         <?php foreach($block['partner'] as $partner){?>
                 <a class='partner-list-box' href='<?php echo $partner['link']?>'>

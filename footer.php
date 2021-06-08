@@ -11,7 +11,7 @@
 						<div><?php the_field('kontakt', 'option');?></div>
 					</div>
 					<div class='footer-adress'>
-					  <h3>Adress</h3>
+					  <h3>Adresse</h3>
 						<div><?php the_field('adress', 'option');?></div>
 					</div>
 				</div>
