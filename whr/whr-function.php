@@ -36,6 +36,7 @@ add_action('acf/init', 'my_acf_op_init');
 
 
 add_action( 'init', 'create_kontakt', 0 );
+add_action( 'init', 'create_job', 0 );
 add_action( 'init', 'create_room', 0 );
 add_action( 'init', 'create_angebot', 0 );
 add_action( 'init', 'disable_editor', 0 );

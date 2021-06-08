@@ -1867,3 +1867,59 @@ h3 {
 		}
 	}
 }
+
+.joblist {
+	.joblist-filter {
+		display: flex;
+		padding-bottom: 24px;
+		.filter-button {
+			display: block;
+			padding: 8px 20px;
+			margin: 16px 0;
+			width: fit-content;
+			color: $gold;
+			cursor: pointer;
+			border: 1px solid $gold;
+			@include font-text();
+			margin-right: 16px;
+			cursor: pointer;
+			&.selected {
+				color: white;
+				background-color: $gold;
+			}
+		}
+	}
+	.joblist-container {
+		display: flex;
+
+		.job-container {
+			color: $black;
+			width: 100%;
+			padding: 32px 64px;
+			box-shadow: 0 1px 3px 0 rgba(36, 37, 42, 0.55);
+			border: solid 1px rgba(9, 30, 66, 0.1);
+			margin-bottom: 32px;
+			background-color: $lightgrey;
+			transition: all 0.3s;
+			.title {
+				@include headline-font-small();
+				margin-bottom: 16px;
+			}
+			.ort {
+				@include font-text-big();
+			}
+			.start {
+				@include font-text-big();
+			}
+			&:hover {
+				transition: all 0.3s;
+
+				color: white;
+				background-color: $gold;
+			}
+		}
+		&.ausbild {
+			display: none;
+		}
+	}
+}
