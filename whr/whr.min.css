@@ -1,5 +1,5 @@
 html{scroll-behavior:smooth}
-body{margin:0 !important}
+body{margin:0 !important;font-family:"Work Sans"}
 p{margin:0}
 u{-webkit-text-decoration-color:transparent;text-decoration-color:transparent;border-bottom:4px solid #a8925e}
 a{text-decoration:none;color:white;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;display:block}
