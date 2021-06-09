@@ -111,8 +111,9 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .fulltext{padding-left:320px}
 .fulltext h1{margin-bottom:48px}
 .fulltext p{font-family:"Work Sans";font-size:20px;line-height:36px}
-.fulltext a{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
-.fulltext a:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
+.fulltext a{font-family:"Work Sans";font-size:20px;line-height:36px;color:#a8925e}
+.fulltext .link{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex}
+.fulltext .link:after{content:url("../assets/img/right-arrow.svg");margin-left:16px}
 .pageheader{height:66vh;width:100%;color:white;background-size:cover;background-repeat:no-repeat;background-position:center}
 .pageheader:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);height:66vh}
 .pageheader .pageheader-content{position:absolute;top:40vh;left:128px;max-width:660px}
@@ -319,6 +320,7 @@ h2{font-size:32px;line-height:42px}
 .quote .content{font-size:32px;line-height:42px}
 .fulltext{padding-left:16px}
 .fulltext p{font-size:16px;line-height:32px}
+.fulltext a{font-size:16px;line-height:32px}
 .pageheader .pageheader-content .content-text{font-size:16px;line-height:32px}
 .pageheader .pageheader-content{left:32px}
 .footer{padding:16px;padding-bottom:156px}

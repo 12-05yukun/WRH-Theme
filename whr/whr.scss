@@ -764,6 +764,10 @@ h3 {
 		@include font-text-big();
 	}
 	a {
+		@include font-text-big();
+		color: $gold;
+	}
+	.link {
 		@include font-text();
 		margin-top: 32px;
 		color: $gold;
