@@ -1,21 +1,27 @@
 <?php 
 $angebots =$block['angebot'];
 $filters=get_field_object('field_60b0a67bba69f');
+$filter_check=[];
+foreach($angebots as $an){
+        foreach(get_field('kategorie',$an) as $kat){$filter_check[]=$kat;}
+}
 ?>
 
 <div class='row angebot-list'>
   <h1><?php echo $block['headline']?></h1>
   <p><?php echo $block['content']?></p>
   <div class='angebot-filters-container'>
-          <div class='angebot-filters'>
+     <div class='angebot-filters'>
         <div choice='all' class='angebot-choice selected'>
                Alle
         </div>
-     <?php foreach($filters['choices'] as $key => $choice){?>
+      
+     <?php foreach($filters['choices'] as $key => $choice){ ?>
+      <?php if(in_array($key,$filter_check)){?>
         <div choice='<?php echo $key?>' class='angebot-choice'>
-                <?php echo $choice?>
+                <?php echo $choice;?>
         </div>
-     <?php }?>     
+     <?php }}?>     
      </div>
   </div>
   <div class='angebot-list-items'>

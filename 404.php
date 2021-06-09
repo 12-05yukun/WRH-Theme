@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div class='notfound'>Page not found</div>
+	<div class='notfound'>Seite nicht gefunden</div>
 
 
 <?php get_footer(); ?>
