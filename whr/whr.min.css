@@ -266,7 +266,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .joblist .joblist-container .job-container:hover{-webkit-transition:all .3s;transition:all .3s;color:white;background-color:#a8925e}
 .joblist .joblist-container.ausbild{display:none}
 .notfound{height:70vh;display:-webkit-box;display:-ms-flexbox;display:flex;font-family:"Noto Serif",serif;font-size:60px;margin:16px 0;line-height:80px;font-weight:normal;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
-@media(min-width:800px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
+@media(min-width:1080px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
 .pickmeup .pmu-instance nav .pmu-month{color:#383838 !important;font-family:"serif" !important;font-size:32px !important}
@@ -288,23 +288,45 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .pickmeup .pmu-instance .pmu-days .pmu-today{color:white !important;background-color:#707070}
 .pickmeup .pmu-instance .calendar-prev{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 .pickmeup .pmu-instance .calendar-next{height:100%;width:24px;background-image:url(../assets/img/calendar-arrow.svg);background-size:contain;background-position:center;background-repeat:no-repeat;-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
+}@media(max-width:1380px){.room-list .room-list-page{grid-template-columns:1fr 1fr}
+.angebot-list .angebot-list-items{grid-template-columns:1fr 1fr}
 }@media(max-width:1080px){h1{font-size:32px;line-height:42px}
 h1{margin:32px 0 !important}
 li{font-size:16px;line-height:32px}
 h2{font-size:32px;line-height:42px}
 .row{padding:64px 24px;max-width:100%}
 .row-small{padding:64px 24px;max-width:100%}
+.header .header-menu-bar{top:0;right:0;margin-right:8px;padding:8px;width:auto}
+.header .header-menu-bar a{display:none}
+#menu{width:100%}
 .hero .content .headline{font-size:32px;line-height:42px}
 .hero .content .text{font-size:16px;line-height:32px}
+.hero .hero-sidebar{display:none}
+.hero .logo{width:70%}
 .block .block-content p{font-size:16px;line-height:32px}
 .block .block-content .link{font-size:16px;line-height:32px}
+.block{grid-template-columns:1fr !important}
+.block .block-content{padding:24px}
+.block .block-image{min-height:35vh}
 .halfblock .block-content p{font-size:16px;line-height:32px}
 .halfblock .block-content .link{font-size:16px;line-height:32px}
+.halfblock{grid-template-columns:1fr !important}
+.halfblock .block-content{padding:24px}
+.halfblock .block-image{min-height:35vh}
+.halfblock.room-block{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.halfblock.room-block .block-content{width:90% !important}
+.halfblock.room-block .room-slicker{display:block;width:100vw;height:40vh}
+.halfblock.room-block .block-image{opacity:1 !important}
 .content-group p{font-size:16px;line-height:32px}
+.content-group .content-group-items{grid-template-columns:1fr}
 .quote .content{font-size:32px;line-height:42px}
+.fulltext{padding-left:16px}
 .fulltext p{font-size:16px;line-height:32px}
 .fulltext a{font-size:16px;line-height:32px}
 .pageheader .pageheader-content .content-text{font-size:16px;line-height:32px}
+.pageheader .pageheader-content{left:32px}
+.footer{padding:16px;padding-bottom:156px}
+.footer .footer-info{grid-template-columns:1fr}
 .newsletter #email{font-size:16px;line-height:32px}
 .newsletter #email{font-size:32px;line-height:42px}
 .newsletter #email::-webkit-input-placeholder{font-size:32px;line-height:42px}
@@ -313,58 +335,19 @@ h2{font-size:32px;line-height:42px}
 .newsletter #email::-ms-input-placeholder{font-size:32px;line-height:42px}
 .newsletter #email::placeholder{font-size:32px;line-height:42px}
 .kontakt p{font-size:16px;line-height:32px}
-.blog-list .blog-list-page .blog-container .blog-info .blog-text{font-size:16px;line-height:32px}
-.room-list .room-list-page .room-container .room-info .excerpt{font-size:16px;line-height:32px}
-.angebot-list p{font-size:16px;line-height:32px}
-.angebot-list .angebot-filters .angebot-choice{font-size:16px;line-height:32px}
-.angebot-list .angebot-list-items .item .angebot-list-info .excerpt{font-size:16px;line-height:32px}
-.angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail .punkt{font-size:16px;line-height:32px}
-.treatments .treatments-container .treatment-box{font-size:16px;line-height:32px}
-.treatments .treatments-container .treatment-box:hover:before{font-size:32px;line-height:42px}
-.form>div{font-size:32px;line-height:42px}
-.form label{font-size:16px;line-height:32px}
-.form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-size:16px;line-height:32px}
-.form textarea{font-size:16px;line-height:32px}
-.form input[type="submit"]{font-size:16px;line-height:32px}
-.routen-planer #start-place{font-size:16px;line-height:32px}
-.routen-planer #start-place{font-size:32px;line-height:42px}
-.routen-planer #start-place::-webkit-input-placeholder{font-size:32px;line-height:42px}
-.routen-planer #start-place::-moz-placeholder{font-size:32px;line-height:42px}
-.routen-planer #start-place:-ms-input-placeholder{font-size:32px;line-height:42px}
-.routen-planer #start-place::-ms-input-placeholder{font-size:32px;line-height:42px}
-.routen-planer #start-place::placeholder{font-size:32px;line-height:42px}
-.routen-planer #google-map{font-size:16px;line-height:32px}
-.download .download-list .download-box .download-title{font-size:16px;line-height:32px}
-.joblist .joblist-container .job-container .ort{font-size:16px;line-height:32px}
-.joblist .joblist-container .job-container .start{font-size:16px;line-height:32px}
-.notfound{font-size:32px;line-height:42px}
-}@media(max-width:800px){.header .header-menu-bar{top:0;right:0;margin-right:8px;padding:8px;width:auto}
-.header .header-menu-bar a{display:none}
-#menu{width:100%}
-.hero .hero-sidebar{display:none}
-.hero .logo{width:70%}
-.block{grid-template-columns:1fr !important}
-.block .block-content{padding:24px}
-.block .block-image{min-height:35vh}
-.halfblock{grid-template-columns:1fr !important}
-.halfblock .block-content{padding:24px}
-.halfblock .block-image{min-height:35vh}
-.halfblock.room-block{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.halfblock.room-block .block-content{width:90% !important}
-.halfblock.room-block .room-slicker{display:block;width:100vw;height:40vh}
-.halfblock.room-block .block-image{opacity:1 !important}
-.content-group .content-group-items{grid-template-columns:1fr}
-.fulltext{padding-left:16px}
-.pageheader .pageheader-content{left:32px}
-.footer{padding:16px;padding-bottom:156px}
-.footer .footer-info{grid-template-columns:1fr}
 .kontakt{grid-template-columns:1fr}
 .kontakt .partner-box{width:90%;grid-template-columns:1fr}
+.blog-list .blog-list-page .blog-container .blog-info .blog-text{font-size:16px;line-height:32px}
 .blog-list .blog-list-page{grid-template-columns:1fr}
+.room-list .room-list-page .room-container .room-info .excerpt{font-size:16px;line-height:32px}
 .room-list .room-list-page{grid-template-columns:1fr}
+.angebot-list p{font-size:16px;line-height:32px}
 .angebot-list .angebot-filters-container{width:90vw;overflow:scroll}
 .angebot-list .angebot-filters-container .angebot-filters{-webkit-box-pack:normal;-ms-flex-pack:normal;justify-content:normal;padding-right:20px}
+.angebot-list .angebot-filters .angebot-choice{font-size:16px;line-height:32px}
 .angebot-list .angebot-list-items{grid-template-columns:1fr}
+.angebot-list .angebot-list-items .item .angebot-list-info .excerpt{font-size:16px;line-height:32px}
+.angebot-list .angebot-list-items .item .angebot-list-info .angebot-list-detail .punkt{font-size:16px;line-height:32px}
 .pickmeup{z-index:999;left:50% !important;-webkit-transform:translate(-50%,-33px);transform:translate(-50%,-33px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:white !important}
 .pickmeup .pmu-instance{display:block !important;height:auto !important}
 .pickmeup .pmu-instance nav{color:#383838 !important}
@@ -386,8 +369,27 @@ h2{font-size:32px;line-height:42px}
 .booking-bar .booking .gast,.booking-bar .booking select{display:none}
 .booking-bar .button-group #find-room{font-size:12px;margin-right:0;width:50%;line-height:30px}
 .booking-bar .button-group #table-booking{font-size:12px;width:50%}
+.treatments .treatments-container .treatment-box{font-size:16px;line-height:32px}
+.treatments .treatments-container .treatment-box:hover:before{font-size:32px;line-height:42px}
+.form>div{font-size:32px;line-height:42px}
+.form label{font-size:16px;line-height:32px}
+.form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-size:16px;line-height:32px}
+.form textarea{font-size:16px;line-height:32px}
+.form input[type="submit"]{font-size:16px;line-height:32px}
 .form{padding:64px 16px}
 .form .form-container{grid-template-columns:1fr}
 .form textarea{width:90%}
+.routen-planer #start-place{font-size:16px;line-height:32px}
+.routen-planer #start-place{font-size:32px;line-height:42px}
+.routen-planer #start-place::-webkit-input-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::-moz-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place:-ms-input-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::-ms-input-placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::placeholder{font-size:32px;line-height:42px}
+.routen-planer #google-map{font-size:16px;line-height:32px}
+.download .download-list .download-box .download-title{font-size:16px;line-height:32px}
 .download .download-list{grid-template-columns:1fr}
+.joblist .joblist-container .job-container .ort{font-size:16px;line-height:32px}
+.joblist .joblist-container .job-container .start{font-size:16px;line-height:32px}
+.notfound{font-size:32px;line-height:42px}
 }
