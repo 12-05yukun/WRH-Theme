@@ -266,6 +266,11 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .joblist .joblist-container .job-container:hover{-webkit-transition:all .3s;transition:all .3s;color:white;background-color:#a8925e}
 .joblist .joblist-container.ausbild{display:none}
 .notfound{height:70vh;display:-webkit-box;display:-ms-flexbox;display:flex;font-family:"Noto Serif",serif;font-size:60px;margin:16px 0;line-height:80px;font-weight:normal;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+.full-image-block{position:relative;background-position:center;background-size:cover;background-repeat:no-repeat}
+.full-image-block *{color:white !important}
+.full-image-block .block-content{background-color:transparent;z-index:2}
+.full-image-block.right:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1;background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.4)));background:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.4))}
+.full-image-block.left:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1;background:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.4)));background:linear-gradient(to left,rgba(0,0,0,0.7),rgba(0,0,0,0.4))}
 @media(min-width:1080px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}

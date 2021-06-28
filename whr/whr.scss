@@ -1941,3 +1941,31 @@ h3 {
 	align-items: center;
 	justify-content: center;
 }
+
+.full-image-block {
+	position: relative;
+	* {
+		color: white !important;
+	}
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.block-content {
+		background-color: transparent;
+		z-index: 2;
+	}
+	&.right {
+		&:after {
+			@include image-darker();
+			z-index: 1;
+			background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0.4));
+		}
+	}
+	&.left {
+		&:after {
+			@include image-darker();
+			z-index: 1;
+			background: linear-gradient(to left, rgba(#000, 0.7), rgba(#000, 0.4));
+		}
+	}
+}
