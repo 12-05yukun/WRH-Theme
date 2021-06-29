@@ -493,7 +493,17 @@ h3 {
 			margin-top: 32px;
 			color: $gold;
 			display: flex;
+			transition: 0.3s all;
+			&:hover {
+				transition: 0.3s all;
+				transform: translateX(10px);
+				&:after {
+					transition: 0.3s all;
+					transform: translateX(10px);
+				}
+			}
 			&:after {
+				transition: 0.3s all;
 				content: url("../assets/img/right-arrow.svg");
 				margin-left: 16px;
 				margin-top: 4px;
@@ -544,7 +554,17 @@ h3 {
 			margin-top: 32px;
 			color: $gold;
 			display: flex;
+			transition: 0.3s all;
+			&:hover {
+				transition: 0.3s all;
+				transform: translateX(10px);
+				&:after {
+					transition: 0.3s all;
+					transform: translateX(10px);
+				}
+			}
 			&:after {
+				transition: 0.3s all;
 				content: url("../assets/img/right-arrow.svg");
 				margin-left: 16px;
 				margin-top: 4px;
@@ -772,7 +792,17 @@ h3 {
 		margin-top: 32px;
 		color: $gold;
 		display: flex;
+		transition: 0.3s all;
+		&:hover {
+			transition: 0.3s all;
+			transform: translateX(10px);
+			&:after {
+				transition: 0.3s all;
+				transform: translateX(10px);
+			}
+		}
 		&:after {
+			transition: 0.3s all;
 			content: url("../assets/img/right-arrow.svg");
 			margin-left: 16px;
 		}
@@ -901,7 +931,17 @@ h3 {
 		align-items: center;
 		cursor: pointer;
 		@include font-text();
+		transition: 0.3s all;
+		&:hover {
+			transition: 0.3s all;
+			transform: translateX(10px);
+			&:after {
+				transition: 0.3s all;
+				transform: translateX(10px);
+			}
+		}
 		&:after {
+			transition: 0.3s all;
 			content: url("../assets/img/right-arrow-white.svg");
 			margin-left: 16px;
 		}
@@ -984,7 +1024,17 @@ h3 {
 		margin-top: 32px;
 		color: $gold;
 		display: flex;
+		transition: 0.3s all;
+		&:hover {
+			transition: 0.3s all;
+			transform: translateX(10px);
+			&:after {
+				transition: 0.3s all;
+				transform: translateX(10px);
+			}
+		}
 		&:after {
+			transition: 0.3s all;
 			content: url("../assets/img/right-arrow.svg");
 			margin-left: 16px;
 		}
@@ -1835,7 +1885,17 @@ h3 {
 		align-items: center;
 		cursor: pointer;
 		@include font-text-big();
+		transition: 0.3s all;
+		&:hover {
+			transition: 0.3s all;
+			transform: translateX(10px);
+			&:after {
+				transition: 0.3s all;
+				transform: translateX(10px);
+			}
+		}
 		&:after {
+			transition: 0.3s all;
 			content: url("../assets/img/right-arrow.svg");
 			margin-left: 16px;
 			margin-top: 12px;
@@ -1866,7 +1926,17 @@ h3 {
 				@include font-text();
 				color: $gold;
 				display: flex;
+				transition: 0.3s all;
+				&:hover {
+					transition: 0.3s all;
+					transform: translateX(10px);
+					&:after {
+						transition: 0.3s all;
+						transform: translateX(10px);
+					}
+				}
 				&:after {
+					transition: 0.3s all;
 					content: url("../assets/img/right-arrow.svg");
 					margin-left: 16px;
 				}
@@ -1960,7 +2030,7 @@ h3 {
 		&:after {
 			@include image-darker();
 			z-index: 1;
-			background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0.4));
+			background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0));
 		}
 	}
 	&.left {
@@ -1968,7 +2038,7 @@ h3 {
 		&:after {
 			@include image-darker();
 			z-index: 1;
-			background: linear-gradient(to left, rgba(#000, 0.7), rgba(#000, 0.4));
+			background: linear-gradient(to left, rgba(#000, 0.7), rgba(#000, 0));
 		}
 	}
 }
