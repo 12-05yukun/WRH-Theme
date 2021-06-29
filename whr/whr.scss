@@ -1951,10 +1951,12 @@ h3 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	.block-content {
+		padding: 15vh 5vw;
 		background-color: transparent;
 		z-index: 2;
 	}
 	&.right {
+		grid-template-columns: 1fr 1.3fr;
 		&:after {
 			@include image-darker();
 			z-index: 1;
@@ -1962,6 +1964,7 @@ h3 {
 		}
 	}
 	&.left {
+		grid-template-columns: 1.3fr 1fr;
 		&:after {
 			@include image-darker();
 			z-index: 1;
