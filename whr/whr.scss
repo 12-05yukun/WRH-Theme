@@ -423,11 +423,11 @@ h3 {
 		z-index: 3;
 		position: absolute;
 		color: white;
-		right: 20px;
-		top: 50%;
-		transform: translateY(-50%);
+		left: 50%;
+		top: 60%;
+		transform: translateX(-50%);
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		text-align: center;
 		@include font-text-small();
 		.hero-sidebar-box {
@@ -437,15 +437,14 @@ h3 {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			height: 96px;
-			width: 96px;
-
+			justify-content: center;
+			height: 128px;
+			width: 164px;
 			border: 1px white solid;
-
 			img {
 				margin: 12px auto;
-				height: 28px;
-				width: 28px;
+				height: 42px;
+				width: 42px;
 			}
 		}
 	}
