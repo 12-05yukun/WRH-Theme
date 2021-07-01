@@ -291,7 +291,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .full-image-block.right:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1;background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0)));background:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0))}
 .full-image-block.left{grid-template-columns:1.3fr 1fr}
 .full-image-block.left:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1;background:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0)));background:linear-gradient(to left,rgba(0,0,0,0.7),rgba(0,0,0,0))}
-.kontakt-list{padding:32px 196px;display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:16px}
+.kontakt-list{padding:32px 196px;padding-bottom:64px;display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:16px}
 .kontakt-list .kontakt-box{display:grid;grid-template-rows:1.2fr 1fr}
 .kontakt-list .kontakt-box .kontakt-img{background-position:center;background-repeat:no-repeat;background-size:cover}
 .kontakt-list .kontakt-box .kontakt-content{background-color:#f2f2f2;color:#383838;padding:16px 24px}

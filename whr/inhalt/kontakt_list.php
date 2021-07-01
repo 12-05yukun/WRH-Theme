@@ -1,8 +1,5 @@
 <?php 
-$partners = get_posts(array(
-	'posts_per_page'	=> -1,
-	'post_type'		=> 'partner'
-));
+$partners =$block['list']
 ?>
 
 <div class='kontakt-list'>
