@@ -154,13 +154,17 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .kontakt .partner-box .partner-position{font-family:"Work Sans";font-size:12px;color:rgba(0,0,0,0.5);padding:8px 0 16px 0;border-bottom:1px solid rgba(0,0,0,0.5)}
 .kontakt .partner-box .partner-phone{font-family:"Work Sans";font-size:12px;color:#383838;padding-top:24px;display:-webkit-box;display:-ms-flexbox;display:flex}
 .kontakt .partner-box .partner-phone:before{display:block;content:"";height:16px;width:16px;background-image:url(../assets/img/phone.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
+.kontakt .partner-box .partner-phone a{color:#383838}
+.kontakt .partner-box .partner-phone a:hover{text-decoration:underline}
 .kontakt .partner-box .partner-email{font-family:"Work Sans";font-size:12px;color:#383838;padding-top:12px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .kontakt .partner-box .partner-email:before{display:block;content:"";height:16px;width:16px;background-image:url(../assets/img/mail.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
+.kontakt .partner-box .partner-email a{color:#383838}
+.kontakt .partner-box .partner-email a:hover{text-decoration:underline}
 .kontakt .partner-box .partner-image{background-position:center;background-repeat:no-repeat;background-size:cover}
-.kontakt a{margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.3s all;transition:.3s all}
-.kontakt a:hover{-webkit-transition:.3s all;transition:.3s all;-webkit-transform:translateX(10px);transform:translateX(10px)}
-.kontakt a:hover:after{-webkit-transition:.3s all;transition:.3s all;-webkit-transform:translateX(10px);transform:translateX(10px)}
-.kontakt a:after{-webkit-transition:.3s all;transition:.3s all;content:url("../assets/img/right-arrow.svg");margin-left:16px}
+.kontakt .link{margin-top:32px;color:#a8925e;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-transition:.3s all;transition:.3s all}
+.kontakt .link:hover{-webkit-transition:.3s all;transition:.3s all;-webkit-transform:translateX(10px);transform:translateX(10px)}
+.kontakt .link:hover:after{-webkit-transition:.3s all;transition:.3s all;-webkit-transform:translateX(10px);transform:translateX(10px)}
+.kontakt .link:after{-webkit-transition:.3s all;transition:.3s all;content:url("../assets/img/right-arrow.svg");margin-left:16px}
 .blog-list{background-color:#f2f2f2}
 .blog-list .blog-list-page{margin:0 auto;max-width:1200px;display:grid;grid-template-columns:1fr 1fr;grid-gap:48px}
 .blog-list .blog-list-page .blog-container{height:720px;display:grid;grid-template-rows:1.3fr 1fr;background-color:white;width:100%;color:black}
@@ -287,6 +291,21 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .full-image-block.right:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1;background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0)));background:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0))}
 .full-image-block.left{grid-template-columns:1.3fr 1fr}
 .full-image-block.left:after{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);z-index:1;background:-webkit-gradient(linear,right top,left top,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0)));background:linear-gradient(to left,rgba(0,0,0,0.7),rgba(0,0,0,0))}
+.kontakt-list{padding:32px 196px;display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:16px}
+.kontakt-list .kontakt-box{display:grid;grid-template-rows:1.2fr 1fr}
+.kontakt-list .kontakt-box .kontakt-img{background-position:center;background-repeat:no-repeat;background-size:cover}
+.kontakt-list .kontakt-box .kontakt-content{background-color:#f2f2f2;color:#383838;padding:16px 24px}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-name{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-position{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;padding-top:8px}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way{margin-top:16px;border-top:#ccc 1px solid;padding:16px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:#383838;display:-webkit-box;display:-ms-flexbox;display:flex}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone:before{display:block;content:"";height:24px;width:24px;background-image:url(../assets/img/phone.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone a{color:#383838}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone a:hover{text-decoration:underline}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:#383838;padding-top:12px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email:before{display:block;content:"";height:24px;width:24px;background-image:url(../assets/img/mail.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email a{color:#383838}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email a:hover{text-decoration:underline}
 @media(min-width:1080px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
@@ -413,4 +432,7 @@ h2{font-size:32px;line-height:42px}
 .joblist .joblist-container .job-container .ort{font-size:16px;line-height:32px}
 .joblist .joblist-container .job-container .start{font-size:16px;line-height:32px}
 .notfound{font-size:32px;line-height:42px}
+.kontakt-list{padding:32px 64px;grid-template-columns:1fr 1fr 1fr}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-name{font-size:32px;line-height:42px}
+}@media(max-width:800px){.kontakt-list{padding:8px 32px;grid-template-columns:1fr}
 }

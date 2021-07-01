@@ -995,6 +995,12 @@ h3 {
 				background-repeat: no-repeat;
 				margin-right: 12px;
 			}
+			a {
+				color: $black;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 		.partner-email {
 			@include font-text-small();
@@ -1013,6 +1019,12 @@ h3 {
 				background-repeat: no-repeat;
 				margin-right: 12px;
 			}
+			a {
+				color: $black;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 		.partner-image {
 			background-position: center;
@@ -1020,7 +1032,7 @@ h3 {
 			background-size: cover;
 		}
 	}
-	a {
+	.link {
 		margin-top: 32px;
 		color: $gold;
 		display: flex;
@@ -2039,6 +2051,97 @@ h3 {
 			@include image-darker();
 			z-index: 1;
 			background: linear-gradient(to left, rgba(#000, 0.7), rgba(#000, 0));
+		}
+	}
+}
+
+.kontakt-list {
+	padding: 32px 196px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+	@media (max-width: 1080px) {
+		padding: 32px 64px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	@media (max-width: 800px) {
+		padding: 8px 32px;
+		grid-template-columns: 1fr;
+	}
+	.kontakt-box {
+		display: grid;
+		grid-template-rows: 1.2fr 1fr;
+		.kontakt-img {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.kontakt-content {
+			background-color: $lightgrey;
+			color: $black;
+			padding: 16px 24px;
+
+			.kontakt-name {
+				@include headline-normal();
+			}
+			.kontakt-position {
+				@include font-text();
+				padding-top: 8px;
+			}
+			.kontakt-way {
+				margin-top: 16px;
+				border-top: #ccc 1px solid;
+				padding: 16px 0;
+				display: flex;
+				flex-direction: column;
+				.partner-phone {
+					@include font-text();
+					color: $black;
+
+					display: flex;
+					&:before {
+						display: block;
+						content: "";
+						height: 24px;
+						width: 24px;
+						background-image: url(../assets/img/phone.svg);
+						background-position: center;
+						background-size: contain;
+						background-repeat: no-repeat;
+						margin-right: 12px;
+					}
+					a {
+						color: $black;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.partner-email {
+					@include font-text();
+					color: $black;
+					padding-top: 12px;
+					display: flex;
+					align-items: center;
+					&:before {
+						display: block;
+						content: "";
+						height: 24px;
+						width: 24px;
+						background-image: url(../assets/img/mail.svg);
+						background-position: center;
+						background-size: contain;
+						background-repeat: no-repeat;
+						margin-right: 12px;
+					}
+					a {
+						color: $black;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
 		}
 	}
 }

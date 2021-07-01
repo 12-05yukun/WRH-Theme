@@ -8,12 +8,11 @@ $email=get_field( 'email', $block['partner']->ID );
    
 
 <div class='row kontakt'>
-
   <div>
     <h2><?php echo $block['headline']?></h2>
     <div><?php echo $block['text']?></div>
     <?php if($block['link']){?>
-     <a href='<?php echo $block['link']['url']?>'><?php echo $block['link']['title']?></a>
+     <a class='link' href='<?php echo $block['link']['url']?>'><?php echo $block['link']['title']?></a>
     <?php }?>
   </div>
     <div>
@@ -22,8 +21,10 @@ $email=get_field( 'email', $block['partner']->ID );
         <div class='partner-title'>IHR ANSPRECHPARTNER</div>
         <div class='partner-name'><?php echo $name?></div>
         <div class='partner-position'><?php echo $position?></div>
-        <div class='partner-phone'><?php echo $phone?></div>
-        <div class='partner-email'>E-Mail schreiben</div>
+        <?php if($phone){?>
+        <div class='partner-phone'><a href='tel:<?php echo $phone?>'><?php echo $phone?></a></div><?php }?>
+        <?php if($email){?>
+        <div class='partner-email'><a href='mailto:<?php echo $email?>'><?php echo $email?></a></div><?php }?>
       </div>
       <div class='partner-image' style='background-image:url(<?php echo $image?>)'></div>
     </div>
