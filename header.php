@@ -25,9 +25,11 @@
 			<!-- header -->
 			<header id='header' class="header clear top" role="banner">
           <div class='icon-bar'>
-						<?php foreach($icons as $icon){?>
+						<?php if($icons) {
+                            foreach ($icons as $icon) {?>
 							<a href='<?php echo $icon['link']['url']?>'><img src='<?php echo $icon['icon']?>'/></a>
-						<?php }?>
+						<?php }
+                        }?>
 					</div>
 					<div  class='icon'>
                                            <img src='<?php echo the_field('logo_small','option')?>'/>
