@@ -157,7 +157,7 @@ jQuery(document).ready(function ($) {
 	$("#find-room").click(function () {
 		let gast = $("#gast").val();
 		window.open(
-			"https://onepagebooking.com/hoteldunord?arrival=" +
+			"https://onepagebooking.com/weinromantikhotel-richtershof?arrival=" +
 				arrival +
 				"&departure=" +
 				departure +

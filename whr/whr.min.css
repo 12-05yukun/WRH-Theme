@@ -306,7 +306,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email:before{display:block;content:"";height:24px;width:24px;background-image:url(../assets/img/mail.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email a{color:#383838}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-email a:hover{text-decoration:underline}
-.component-iconlist{background:#383838;color:#fff;padding-top:100px;padding-bottom:100px;font-size:20px}
+.component-iconlist{background:#383838;color:#fff;padding-top:100px;padding-bottom:100px;font-size:20px;line-height:1.5}
 .component-iconlist .inner{margin:0 auto;max-width:1200px;text-align:center}
 .component-iconlist .inner h2{text-align:center;color:#a8925e}
 .component-iconlist .inner .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:2rem;margin-top:3rem}
