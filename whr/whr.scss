@@ -2025,33 +2025,35 @@ h3 {
 }
 
 .full-image-block {
+	min-height: 80vh;
 	position: relative;
 	* {
 		color: white !important;
 	}
+	display: flex;
+	align-items: flex-end;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	.block-content {
-		padding: 15vh 5vw;
 		background-color: transparent;
 		z-index: 2;
-	}
-	&.right {
-		grid-template-columns: 1fr 1.3fr;
-		&:after {
-			@include image-darker();
-			z-index: 1;
-			background: linear-gradient(to right, rgba(#000, 0.7), rgba(#000, 0));
+		text-align: center;
+		margin: 0 auto;
+		h2 {
+			margin-bottom: 0;
+		}
+		.link {
+			margin: 0 auto;
+			margin-top: 1rem;
 		}
 	}
-	&.left {
-		grid-template-columns: 1.3fr 1fr;
-		&:after {
-			@include image-darker();
-			z-index: 1;
-			background: linear-gradient(to left, rgba(#000, 0.7), rgba(#000, 0));
-		}
+	&:after {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		content: "";
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
 	}
 }
 
