@@ -819,16 +819,19 @@ h3 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	position: relative;
 	&:before {
 		@include image-darker();
 		height: 66vh;
 	}
 	.pageheader-content {
 		position: absolute;
-		top: 40vh;
+		bottom: 25px;
 		left: 128px;
 		max-width: 660px;
-
+		* {
+			line-height: 1.2;
+		}
 		.content-text {
 			@include font-text-big();
 		}
@@ -874,6 +877,9 @@ h3 {
 			}
 			a {
 				color: rgba(#fff, 0.5) !important;
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
