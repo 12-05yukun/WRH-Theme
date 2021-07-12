@@ -2,7 +2,7 @@
 			<footer class="footer" role="contentinfo">
         <div class='footer-info'>
 					<div class='footer-erleben'>
-						<h3><u>Romantik</u> erleben.</h3>
+						<h3>Romantik erleben.</h3>
 						<div>Buchen Sie jetzt Ihren Aufenthalt zum Besten Preis auf unserer Website.</div>
 						<a href='<?php echo get_field('buchen','option')?>' class='whr-button'>JETZT BUCHEN</a>
 					</div>

@@ -30,10 +30,6 @@ jQuery(document).ready(function ($) {
 		adaptiveHeight: true,
 	});
 
-	$("#header .icon").click(function () {
-		window.scrollTo(0, 0);
-	});
-
 	$(".menu-item-has-children").append('<div class="toggle"></div>');
 
 	$(".toggle").click(function (e) {

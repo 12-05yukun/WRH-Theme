@@ -31,11 +31,11 @@
 						<?php }
                         }?>
 					</div>
-					<div  class='icon'>
-                                           <img src='<?php echo the_field('logo_small','option')?>'/>
-					</div>
+					<a href="/"  class='icon'>
+                          <img src='<?php echo the_field('logo_small','option')?>'/>
+					</a>
 				  <div class='header-menu-bar' >
-						<a href='<?php echo get_field('kontakt','option')?>'>KONTAKT</a>
+						<a href='<?php echo get_field('kontaktlink','option')?>'>KONTAKT</a>
 						<a href='<?php echo get_field('buchen','option')?>'>BUCHEN</a>
 						<div id="weglot_here"></div>
 						<div id='header-burger'></div>
