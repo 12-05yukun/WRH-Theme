@@ -310,18 +310,18 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 #menu .sub-menu li{padding:.5rem;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 #menu .sub-menu li.current-menu-item,#menu .sub-menu li:hover{text-decoration:underline}
 #menu .sub-menu li a{padding-right:50px}
-#menu .menu-menu-1-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;width:100%;padding-right:100px}
-#menu #menu-menu-1{position:relative;margin:0;padding:0;border-left:1px solid #fff}
-#menu #menu-menu-1>li{width:250px;padding:.5rem;-webkit-box-sizing:border-box;box-sizing:border-box}
-#menu #menu-menu-1>li:hover,#menu #menu-menu-1>li.current-menu-item{background:#fff}
-#menu #menu-menu-1>li:hover>a,#menu #menu-menu-1>li.current-menu-item>a{color:#a8925e}
-#menu #menu-menu-1 .menu-item-has-children:hover .sub-menu{display:block}
-#menu #menu-menu-1 li{text-align:right;list-style:none;font-size:30px}
+#menu .menu-whr-menu-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;width:100%;padding-right:100px}
+#menu #menu-whr-menu{position:relative;margin:0;padding:0;border-left:1px solid #fff}
+#menu #menu-whr-menu>li{width:250px;padding:.5rem;-webkit-box-sizing:border-box;box-sizing:border-box}
+#menu #menu-whr-menu>li:hover,#menu #menu-whr-menu>li.current-menu-item{background:#fff}
+#menu #menu-whr-menu>li:hover>a,#menu #menu-whr-menu>li.current-menu-item>a{color:#a8925e}
+#menu #menu-whr-menu .menu-item-has-children:hover .sub-menu{display:block}
+#menu #menu-whr-menu li{text-align:right;list-style:none;font-size:30px}
 }@media(min-width:800px) and (max-width:800px){#menu .sub-menu{display:block;position:static;background:#a8925e;font-size:20px}
 #menu .sub-menu li a{padding-right:0}
 #menu li a{font-size:20px}
-#menu #menu-menu-1>li:hover,#menu #menu-menu-1>li.current-menu-item{display:block;color:#fff;position:static;background:#a8925e;font-size:20px}
-#menu #menu-menu-1>li:hover li a,#menu #menu-menu-1>li.current-menu-item li a{padding-right:0}
+#menu #menu-whr-menu>li:hover,#menu #menu-whr-menu>li.current-menu-item{display:block;color:#fff;position:static;background:#a8925e;font-size:20px}
+#menu #menu-whr-menu>li:hover li a,#menu #menu-whr-menu>li.current-menu-item li a{padding-right:0}
 }@media(min-width:1080px){.pickmeup{-webkit-transform:translateY(-25px);transform:translateY(-25px);background-color:white !important;z-index:999}
 .pickmeup .pmu-instance{height:440px !important;width:28em !important}
 .pickmeup .pmu-instance nav{color:#383838 !important;padding:32px !important}
