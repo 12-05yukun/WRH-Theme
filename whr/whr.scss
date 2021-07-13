@@ -319,6 +319,7 @@ h3 {
 	}
 	@media (min-width: 800px) {
 		.sub-menu {
+			min-width: 400px;
 			position: absolute;
 			margin-right: 250px;
 			top: 0;
@@ -402,7 +403,7 @@ h3 {
 			li {
 				text-align: right;
 				list-style: none;
-				font-size: 30px;
+				font-size: 20px;
 			}
 		}
 	}
