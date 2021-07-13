@@ -65,7 +65,7 @@
       <div class='gast'>Gäste</div>
       <select name="gast" id="gast">
         <?php for($i=1;$i<10;$i++){?>
-        <option value="<?php echo $i?>"><?php echo $i?></option>
+        <option <?php if($i == 2) {echo 'selected="selected"';}?> value="<?php echo $i?>"><?php echo $i?></option>
         <?php }?>
      </select>
   </div>
