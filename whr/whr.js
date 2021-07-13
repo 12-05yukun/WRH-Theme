@@ -42,14 +42,15 @@ jQuery(document).ready(function ($) {
 
 	$(".menu-item-has-children >a:first-child").click(function (e) {
 		e.preventDefault();
-		if ($(e.target).next().hasClass("open")) {
-			$(e.target).next().removeClass("open");
+		var parent = jQuery(this).parent();
+		if (parent.hasClass("open")) {
+			parent.removeClass("open");
 		} else {
-			$(e.target).next().addClass("open");
+			parent.addClass("open");
 		}
 	});
 
-	$(".current-menu-parent .sub-menu").addClass("open");
+	$(".current-menu-parent .sub-menu").first().addClass("open");
 
 	pickmeup.defaults.locales["de"] = {
 		days: [

@@ -44,7 +44,7 @@
 			</header>
 			<div id="menu">
 			   <div id='header-burger-close'></div>
-         <?php wp_nav_menu( array( 'menu' => 'whr-menu') ); ?>
+         		<?php wp_nav_menu( array( 'menu' => 'whr-menu') ); ?>
       </div>
 			<!-- /header -->
 

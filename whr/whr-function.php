@@ -93,3 +93,15 @@ function my_acf_op_init() {
    }
 
 }
+
+add_action( 'init', 'register_my_menu' );
+
+function register_my_menu() {
+    register_nav_menus(
+        array(
+                'whr-menu' => __('WHR Menu'),
+            )
+    );
+}
+
+
