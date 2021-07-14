@@ -67,6 +67,3 @@ $values = get_field('ausstattung');
 
 <?php get_footer();?>
 
-<script>
-        ScrollReveal().clean(".room-slicker .block-image");
-</script>
