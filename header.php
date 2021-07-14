@@ -71,6 +71,6 @@
   </div>
   <div class='button-group'> 
      <div class='whr-button' id='find-room'>ZIMMER FINDEN</div>
-     <div class='whr-button' id='table-booking'>TISCH RESERVIEREN</div>
+     <a href="/kontakt" class='whr-button' id='table-booking'>TISCH RESERVIEREN</a>
   </div>
 </div>
