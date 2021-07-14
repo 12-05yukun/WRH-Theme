@@ -24,7 +24,7 @@ $blogs = get_posts(array(
        <?php }?>
       </div>
       <div class='blog-info'>
-        <h3><?php echo get_field('title',$blog)?></h3>
+        <h3><?php echo get_the_title($blog);?></h3>
         <div class='blog-text'><?php echo get_field('excerpt',$blog)?></div>
         <div class='more'>WEITERLESEN</div>
       </div>
