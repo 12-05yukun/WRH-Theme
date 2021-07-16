@@ -14,6 +14,44 @@ $level=get_field_object('field_60bf4b7462232');
               <div class='filter-button' id='ausbild-button'>Ausbildung im Richtershof</div>
       </div>
       <div class='joblist-container profi'>
+      <?php 
+$name=get_field( 'name', $block['partner_profi']->ID );
+$image=get_field( 'image', $block['partner_profi']->ID );
+$position=get_field( 'position', $block['partner_profi']->ID );
+$phone=get_field( 'phone', $block['partner_profi']->ID );
+$email=get_field( 'email', $block['partner_profi']->ID );
+$name2=get_field( 'name', $block['partner_azubi']->ID );
+$image2=get_field( 'image', $block['partner_azubi']->ID );
+$position2=get_field( 'position', $block['partner_azubi']->ID );
+$phone2=get_field( 'phone', $block['partner_azubi']->ID );
+$email2=get_field( 'email', $block['partner_azubi']->ID );
+?>
+   
+
+<div class='row kontakt'>
+  <div>
+    <h2><?php echo $block['headline_profi']?></h2>
+    <div><?php echo $block['text_profi']?></div>
+    <?php if($block['link']){?>
+     <a class='link' href='<?php echo $block['link_profi']['url']?>'><?php echo $block['link_profi']['title']?></a>
+    <?php }?>
+  </div>
+    <div>
+  <div class='partner-box'>
+      <div class='partner-info'>
+        <div class='partner-title'>IHR ANSPRECHPARTNER</div>
+        <div class='partner-name'><?php echo $name?></div>
+        <div class='partner-position'><?php echo $position?></div>
+        <?php if($phone){?>
+        <div class='partner-phone'><a href='tel:<?php echo $phone?>'><?php echo $phone?></a></div><?php }?>
+        <?php if($email){?>
+        <div class='partner-email'><a href='mailto:<?php echo $email?>'><?php echo $email?></a></div><?php }?>
+      </div>
+      <div class='partner-image' style='background-image:url(<?php echo $image?>)'></div>
+    </div>
+  </div>
+  
+</div>
         <?php foreach($jobs as $job){?>
                 <?php if(get_field('job_level',$job)=='profi'){?>
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
@@ -25,6 +63,28 @@ $level=get_field_object('field_60bf4b7462232');
         <?php }?>
       </div>
       <div class='joblist-container ausbild'>
+      <div class='row kontakt'>
+  <div>
+    <h2><?php echo $block['headline_azubi']?></h2>
+    <div><?php echo $block['text_azubi']?></div>
+    <?php if($block['link']){?>
+     <a class='link' href='<?php echo $block['link_azubi']['url']?>'><?php echo $block['link_azubi']['title']?></a>
+    <?php }?>
+  </div>
+    <div>
+  <div class='partner-box'>
+      <div class='partner-info'>
+        <div class='partner-title'>IHR ANSPRECHPARTNER</div>
+        <div class='partner-name'><?php echo $name2?></div>
+        <div class='partner-position'><?php echo $position2?></div>
+        <?php if($phone2){?>
+        <div class='partner-phone'><a href='tel:<?php echo $phone2;?>'><?php echo $phone2;?></a></div><?php }?>
+        <?php if($email2){?>
+        <div class='partner-email'><a href='mailto:<?php echo $emai2;?>'><?php echo $email2;?></a></div><?php }?>
+      </div>
+      <div class='partner-image' style='background-image:url(<?php echo $image2;?>)'></div>
+    </div>
+  </div>
       <?php foreach($jobs as $job){?>
                 <?php if(get_field('job_level',$job)=='ausbildung'){?>
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
