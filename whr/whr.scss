@@ -657,20 +657,28 @@ h3 {
 			.ausstattung-list {
 				display: flex;
 				margin: 16px 0 36px 0;
+				@media (max-width: 800px) {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					grid-gap: 0.5rem;
+				}
 				.room-ausstatt {
 					margin-right: 24px;
 					display: block;
-					height: 24px;
-					width: 24px;
+					height: 30px;
+					width: 30px;
 					background-position: center;
 					background-size: contain;
 					background-repeat: no-repeat;
 				}
-				.TV {
+				.tv {
 					background-image: url(../assets/img/tv.svg);
 				}
 				.dusche {
 					background-image: url(../assets/img/shower.svg);
+				}
+				.badewanne {
+					background-image: url(../assets/img/spa.svg);
 				}
 				.wifi {
 					background-image: url(../assets/img/wifi.svg);
@@ -688,11 +696,11 @@ h3 {
 					background-image: url(../assets/img/newspaper.svg);
 				}
 				.spa {
-					background-image: url(../assets/img/spa.svg);
+					background-image: url(../assets/img/spa-new.svg);
 				}
 
 				.tablet {
-					background-image: url(../assets/img/spa.svg);
+					background-image: url(../assets/img/tablet.svg);
 				}
 
 				.foen {
@@ -924,6 +932,15 @@ h3 {
 	padding: 80px 320px 160px 320px;
 	display: flex;
 	flex-direction: column;
+	@media (max-width: 800px) {
+		.menu {
+			display: block;
+			li {
+				display: block;
+			}
+		}
+	}
+
 	.footer-info {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;

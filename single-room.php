@@ -8,7 +8,6 @@ $values = get_field('ausstattung');
 <div class='pageheader' style='background-image:url(<?php echo get_field('image')?>)'>
   <div class='pageheader-content'>
     <h1><?php echo get_field('title')?></h1>
-    <p class='content-text'><?php echo get_field('subline')?></p>
   </div>
 </div>
 

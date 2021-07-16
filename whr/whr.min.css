@@ -74,16 +74,17 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .halfblock.room-block .block-content{width:50vw}
 .halfblock.room-block .block-content .ausstattung-title{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:rgba(0,0,0,0.5);margin:64px 0 0 0}
 .halfblock.room-block .block-content .ausstattung-list{display:-webkit-box;display:-ms-flexbox;display:flex;margin:16px 0 36px 0}
-.halfblock.room-block .block-content .ausstattung-list .room-ausstatt{margin-right:24px;display:block;height:24px;width:24px;background-position:center;background-size:contain;background-repeat:no-repeat}
-.halfblock.room-block .block-content .ausstattung-list .TV{background-image:url(../assets/img/tv.svg)}
+.halfblock.room-block .block-content .ausstattung-list .room-ausstatt{margin-right:24px;display:block;height:30px;width:30px;background-position:center;background-size:contain;background-repeat:no-repeat}
+.halfblock.room-block .block-content .ausstattung-list .tv{background-image:url(../assets/img/tv.svg)}
 .halfblock.room-block .block-content .ausstattung-list .dusche{background-image:url(../assets/img/shower.svg)}
+.halfblock.room-block .block-content .ausstattung-list .badewanne{background-image:url(../assets/img/spa.svg)}
 .halfblock.room-block .block-content .ausstattung-list .wifi{background-image:url(../assets/img/wifi.svg)}
 .halfblock.room-block .block-content .ausstattung-list .water{background-image:url(../assets/img/water.svg)}
 .halfblock.room-block .block-content .ausstattung-list .shoe{background-image:url(../assets/img/shoe-brush.svg)}
 .halfblock.room-block .block-content .ausstattung-list .sleep{background-image:url(../assets/img/turndown.svg)}
 .halfblock.room-block .block-content .ausstattung-list .news{background-image:url(../assets/img/newspaper.svg)}
-.halfblock.room-block .block-content .ausstattung-list .spa{background-image:url(../assets/img/spa.svg)}
-.halfblock.room-block .block-content .ausstattung-list .tablet{background-image:url(../assets/img/spa.svg)}
+.halfblock.room-block .block-content .ausstattung-list .spa{background-image:url(../assets/img/spa-new.svg)}
+.halfblock.room-block .block-content .ausstattung-list .tablet{background-image:url(../assets/img/tablet.svg)}
 .halfblock.room-block .block-content .ausstattung-list .foen{background-image:url(../assets/img/foen.svg)}
 .halfblock.room-block .block-content .ausstattung-list .bademantel{background-image:url(../assets/img/bademantel.svg)}
 .halfblock.room-block .block-content .ausstattung-list .parkplatz{background-image:url(../assets/img/parking.svg)}
@@ -461,6 +462,9 @@ h2{font-size:32px;line-height:42px}
 #menu .menu li.menu-item-has-children:hover .sub-menu,#menu .menu li.menu-item-has-children:active .sub-menu{display:block}
 #menu .menu li.menu-item-has-children .sub-menu{display:none}
 #menu .menu li a{font-size:20px}
+.halfblock.room-block .block-content .ausstattung-list{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:.5rem}
+.footer .menu{display:block}
+.footer .menu li{display:block}
 .kontakt-list{padding:8px 32px;grid-template-columns:1fr}
 .component-iconlist .inner .grid{grid-template-columns:repeat(2,1fr)}
 }@media(max-width:500px){.component-iconlist .inner .grid{grid-template-columns:repeat(1,1fr)}
