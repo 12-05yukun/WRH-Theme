@@ -22,7 +22,7 @@ $types=get_field_object('field_6098fca180deb');
         <h3><?php echo get_field('title',$room)?></h3>
         <div class='excerpt'><?php echo get_field('excerpt',$room)?></div>
         <div style='display:flex;justify-content:space-between;margin-top: 36px;'>
-          <p class='price'><?php echo 'ab € '.get_field('price',$room).'-- pro Zimmer'?></p>
+          <p class='price'><?php echo 'ab € '.get_field('price',$room).',00 pro Zimmer'?></p>
           <div class='more'>WEITERLESEN</div>
         </div>
       </div>
