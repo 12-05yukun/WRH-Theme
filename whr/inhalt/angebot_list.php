@@ -26,7 +26,7 @@ foreach($angebots as $an){
   </div>
   <div class='angebot-list-items'>
     <?php if ($angebots){ foreach($angebots as $angebot){ $punkte=get_field('punkte',$angebot);  $permalink = get_field('link', $angebot)  ? get_field('link', $angebot)['link']: get_permalink( $angebot->ID );?>
-      <a class='all item visible <?php foreach(get_field('kategorie',$angebot) as $kat){echo ' '.$kat;}?>' href='<?php echo esc_url( $permalink ); ?>'>
+      <a target="_blank" class='all item visible <?php foreach(get_field('kategorie',$angebot) as $kat){echo ' '.$kat;}?>' href='<?php echo esc_url( $permalink ); ?>'>
         <div class='item-image' >
            <img src='<?php echo get_field('image',$angebot)?>' />
         </div>
