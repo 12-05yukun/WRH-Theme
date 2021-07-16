@@ -85,6 +85,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
       <div class='partner-image' style='background-image:url(<?php echo $image2;?>)'></div>
     </div>
   </div>
+  </div>
       <?php foreach($jobs as $job){?>
                 <?php if(get_field('job_level',$job)=='ausbildung'){?>
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
