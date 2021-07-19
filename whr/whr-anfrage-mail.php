@@ -333,7 +333,7 @@
     </style>
   </head>
   <body class="">
-    <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+    <span class="preheader">Neue Behandlungsanfrage auf Weinromantikhotel.com</span>
     <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
       <tr>
         <td>&nbsp;</td>
@@ -349,25 +349,28 @@
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <p>Hi there,</p>
-                        <p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
-                          <tbody>
-                            <tr>
-                              <td align="left">
-                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                  <tbody>
-                                    <tr>
-                                      <td> <a href="http://htmlemail.io" target="_blank">Call To Action</a> </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                        <p>Good luck! Hope it works.</p>
+                        <h2>Neue Behandlungsanfrage</h2>
+                        <p>Sehr geehrte Damen und Herren, <br /> es ist eine neue Behandlungsanfrage eingegangen.</p>
+                        <i>Datum: </i><?php echo $now;?> Uhr<br />
+                        <i>Name: </i><?php echo $name;?><br />
+                        <i>E-Mail-Adresse: </i><?php echo $email;?><br /></p>
+                        <p><i>Behandlungen:</i></p>
+                        <hr />
+                        <?php if($behandlungen):foreach($behandlungen as $behandlung):
+                          $time = date('d.m.Y - H:i', strtotime($behandlung['date']));
+                        
+                          ?>
+                        <p>
+                          <strong><?php echo $behandlung['title'];?></strong><br />
+                          <span><?php echo $behandlung['detail'];?></span><br />
+                          <i>Dauer: <?php echo $behandlung['time'];?> Min.</i><br/>
+                          <i>Preis: <?php echo $behandlung['price'];?> €</i><br />
+                          <i>Wunschdatum: <?php echo $time;?> Uhr</i>
+                        </p>
+                        <hr />
+
+                        <?php endforeach;endif;?>
+                        
                       </td>
                     </tr>
                   </table>
@@ -382,15 +385,10 @@
             <div class="footer">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td class="content-block">
-                    <span class="apple-link">Company Inc, 3 Abbey Road, San Francisco CA 94102</span>
-                    <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>.
-                  </td>
+                
                 </tr>
                 <tr>
-                  <td class="content-block powered-by">
-                    Powered by <a href="http://htmlemail.io">HTMLemail</a>.
-                  </td>
+                 
                 </tr>
               </table>
             </div>
