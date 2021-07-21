@@ -1,8 +1,17 @@
+
+
+<?php 
+	if(get_field('title')) {
+		$title = get_field('title').' – '.bloginfo('name');
+	} else {
+		$title = get_the_title().' – '.bloginfo('name');´
+	}
+?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<title><?php bloginfo( 'name' ); ?> - <?php the_field('title');?></title>
+		<title><?php echo $title;?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/favicon.ico" rel="shortcut icon">
