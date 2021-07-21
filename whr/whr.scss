@@ -2184,6 +2184,7 @@ h3 {
 	.kontakt-box {
 		display: grid;
 		grid-template-rows: 1.2fr 1fr;
+		overflow: hidden;
 		.kontakt-img {
 			background-position: center;
 			background-repeat: no-repeat;
@@ -2200,6 +2201,9 @@ h3 {
 			.kontakt-position {
 				@include font-text();
 				padding-top: 8px;
+			}
+			a {
+				font-size: 12px;
 			}
 			.kontakt-way {
 				margin-top: 16px;

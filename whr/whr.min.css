@@ -294,11 +294,12 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .full-image-block .block-content .link{margin:0 auto;margin-top:1rem}
 .full-image-block:after{position:absolute;height:100%;width:100%;content:"";background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0.2)),to(rgba(0,0,0,0.8)));background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8))}
 .kontakt-list{padding:32px 196px;padding-bottom:64px;display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:16px}
-.kontakt-list .kontakt-box{display:grid;grid-template-rows:1.2fr 1fr}
+.kontakt-list .kontakt-box{display:grid;grid-template-rows:1.2fr 1fr;overflow:hidden}
 .kontakt-list .kontakt-box .kontakt-img{background-position:center;background-repeat:no-repeat;background-size:cover}
 .kontakt-list .kontakt-box .kontakt-content{background-color:#f2f2f2;color:#383838;padding:16px 24px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-name{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-position{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;padding-top:8px}
+.kontakt-list .kontakt-box .kontakt-content a{font-size:12px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way{margin-top:16px;border-top:#ccc 1px solid;padding:16px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:#383838;display:-webkit-box;display:-ms-flexbox;display:flex}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone:before{display:block;content:"";height:24px;width:24px;background-image:url(../assets/img/phone.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
