@@ -2,9 +2,9 @@
 
 <?php 
 	if(get_field('title')) {
-		$title = get_field('title').' – '.bloginfo('name');
+		$title = get_field('title').' – '.get_bloginfo('name');
 	} else {
-		$title = get_the_title().' – '.bloginfo('name');
+		$title = get_the_title().' – '.get_bloginfo('name');
 	}
 ?>
 <!doctype html>
