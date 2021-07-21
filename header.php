@@ -4,7 +4,7 @@
 	if(get_field('title')) {
 		$title = get_field('title').' – '.bloginfo('name');
 	} else {
-		$title = get_the_title().' – '.bloginfo('name');´
+		$title = get_the_title().' – '.bloginfo('name');
 	}
 ?>
 <!doctype html>
