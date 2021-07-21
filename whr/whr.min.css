@@ -299,7 +299,6 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .kontakt-list .kontakt-box .kontakt-content{background-color:#f2f2f2;color:#383838;padding:16px 24px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-name{font-family:"Noto Serif",serif;font-size:36px;font-weight:normal;line-height:48px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-position{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;padding-top:8px}
-.kontakt-list .kontakt-box .kontakt-content a{font-size:12px}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way{margin-top:16px;border-top:#ccc 1px solid;padding:16px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone{font-family:"Work Sans";font-size:16px;line-height:24px;font-weight:normal;color:#383838;display:-webkit-box;display:-ms-flexbox;display:flex}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-way .partner-phone:before{display:block;content:"";height:24px;width:24px;background-image:url(../assets/img/phone.svg);background-position:center;background-size:contain;background-repeat:no-repeat;margin-right:12px}
@@ -360,6 +359,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 h1{margin:32px 0 !important}
 li{font-size:16px;line-height:32px}
 h2{font-size:32px;line-height:42px}
+h2{font-size:24px;line-height:32px}
 .row{padding:64px 24px;max-width:100%}
 .row-small{padding:64px 24px;max-width:100%}
 .header .header-menu-bar{top:0;right:0;margin-right:8px;padding:8px;width:auto}
@@ -386,6 +386,7 @@ h2{font-size:32px;line-height:42px}
 .content-group p{font-size:16px;line-height:32px}
 .content-group .content-group-items{grid-template-columns:1fr}
 .quote .content{font-size:32px;line-height:42px}
+.quote .content{font-size:24px;line-height:32px}
 .fulltext{padding-left:16px}
 .fulltext p{font-size:16px;line-height:32px}
 .fulltext a{font-size:16px;line-height:32px}
@@ -395,11 +396,17 @@ h2{font-size:32px;line-height:42px}
 .footer .footer-info{grid-template-columns:1fr}
 .newsletter #email{font-size:16px;line-height:32px}
 .newsletter #email{font-size:32px;line-height:42px}
+.newsletter #email{font-size:24px;line-height:32px}
 .newsletter #email::-webkit-input-placeholder{font-size:32px;line-height:42px}
 .newsletter #email::-moz-placeholder{font-size:32px;line-height:42px}
 .newsletter #email:-ms-input-placeholder{font-size:32px;line-height:42px}
 .newsletter #email::-ms-input-placeholder{font-size:32px;line-height:42px}
 .newsletter #email::placeholder{font-size:32px;line-height:42px}
+.newsletter #email::-webkit-input-placeholder{font-size:24px;line-height:32px}
+.newsletter #email::-moz-placeholder{font-size:24px;line-height:32px}
+.newsletter #email:-ms-input-placeholder{font-size:24px;line-height:32px}
+.newsletter #email::-ms-input-placeholder{font-size:24px;line-height:32px}
+.newsletter #email::placeholder{font-size:24px;line-height:32px}
 .kontakt p{font-size:16px;line-height:32px}
 .kontakt{grid-template-columns:1fr}
 .kontakt .partner-box{width:90%;grid-template-columns:1fr}
@@ -438,6 +445,7 @@ h2{font-size:32px;line-height:42px}
 .treatments .treatments-container .treatment-box{font-size:16px;line-height:32px}
 .treatments .treatments-container .treatment-box:hover:before{font-size:32px;line-height:42px}
 .form>div{font-size:32px;line-height:42px}
+.form>div{font-size:24px;line-height:32px}
 .form label{font-size:16px;line-height:32px}
 .form input[type="text"],.form input[type="email"],.form input[type="tel"]{font-size:16px;line-height:32px}
 .form textarea{font-size:16px;line-height:32px}
@@ -447,11 +455,17 @@ h2{font-size:32px;line-height:42px}
 .form textarea{width:90%}
 .routen-planer #start-place{font-size:16px;line-height:32px}
 .routen-planer #start-place{font-size:32px;line-height:42px}
+.routen-planer #start-place{font-size:24px;line-height:32px}
 .routen-planer #start-place::-webkit-input-placeholder{font-size:32px;line-height:42px}
 .routen-planer #start-place::-moz-placeholder{font-size:32px;line-height:42px}
 .routen-planer #start-place:-ms-input-placeholder{font-size:32px;line-height:42px}
 .routen-planer #start-place::-ms-input-placeholder{font-size:32px;line-height:42px}
 .routen-planer #start-place::placeholder{font-size:32px;line-height:42px}
+.routen-planer #start-place::-webkit-input-placeholder{font-size:24px;line-height:32px}
+.routen-planer #start-place::-moz-placeholder{font-size:24px;line-height:32px}
+.routen-planer #start-place:-ms-input-placeholder{font-size:24px;line-height:32px}
+.routen-planer #start-place::-ms-input-placeholder{font-size:24px;line-height:32px}
+.routen-planer #start-place::placeholder{font-size:24px;line-height:32px}
 .routen-planer #google-map{font-size:16px;line-height:32px}
 .download .download-list .download-box .download-title{font-size:16px;line-height:32px}
 .download .download-list{grid-template-columns:1fr}
@@ -460,6 +474,7 @@ h2{font-size:32px;line-height:42px}
 .notfound{font-size:32px;line-height:42px}
 .kontakt-list{padding:32px 64px;grid-template-columns:1fr 1fr 1fr}
 .kontakt-list .kontakt-box .kontakt-content .kontakt-name{font-size:32px;line-height:42px}
+.kontakt-list .kontakt-box .kontakt-content .kontakt-name{font-size:24px;line-height:32px}
 }@media(max-width:1000px){.component-iconlist .inner .grid{grid-template-columns:repeat(3,1fr)}
 }@media(max-width:800px){#menu .menu li{list-style:none}
 #menu .menu li.menu-item-has-children:hover .sub-menu,#menu .menu li.menu-item-has-children:active .sub-menu{display:block}
@@ -468,7 +483,15 @@ h2{font-size:32px;line-height:42px}
 .halfblock.room-block .block-content .ausstattung-list{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:.5rem}
 .footer .menu{display:block}
 .footer .menu li{display:block}
+.booking-bar .booking-calendar #start-date,.booking-bar .booking-calendar #end-date{font-size:20px}
+.booking-bar .booking select{font-size:20px}
+.treatments{padding:0}
+.treatments .treatments-container{grid-template-columns:1fr}
+.treatments .treatments-container .treatment-box .title{font-size:20px}
+.joblist .joblist-container .job-container{padding:16px 16px}
+.joblist .joblist-container .job-container .title{font-size:20px}
 .kontakt-list{padding:8px 32px;grid-template-columns:1fr}
+.kontakt-list .kontakt-box .kontakt-content a{font-size:12px}
 .component-iconlist .inner .grid{grid-template-columns:repeat(2,1fr)}
 }@media(max-width:500px){.component-iconlist .inner .grid{grid-template-columns:repeat(1,1fr)}
 }
