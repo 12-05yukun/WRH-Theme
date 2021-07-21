@@ -392,6 +392,9 @@ h3 {
 						}
 					}
 				}
+				&.current-menu-item {
+					opacity: 0.5;
+				}
 			}
 			.menu-item-has-children {
 				&:hover {
@@ -526,6 +529,11 @@ h3 {
 	}
 	&.left {
 		grid-template-columns: 1.7fr 1fr;
+	}
+	&.map {
+		a {
+			display: inline;
+		}
 	}
 	.googlemap {
 		height: 100%;

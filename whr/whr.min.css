@@ -31,7 +31,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .header .country-selector.weglot-dropdown .wgcurrent:after{display:none !important}
 .header .country-selector.weglot-dropdown .wgcurrent a,.header .country-selector.weglot-dropdown .wgcurrent span{padding-right:0;font-family:"Work Sans";font-size:16px !important;font-weight:normal;background-color:transparent}
 .header .country-selector.weglot-dropdown a,.header .country-selector.weglot-dropdown span{font-family:"Work Sans";font-size:16px !important;font-weight:normal;background-color:transparent}
-#menu{z-index:999;height:100vh;min-width:50vw;background-color:#a8925e;position:fixed;top:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
+#menu{z-index:9999999999;height:100vh;min-width:50vw;background-color:#a8925e;position:fixed;top:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .3s ease-out;transition:all .3s ease-out}
 #menu #header-burger-close{position:absolute;top:32px;right:48px;background-image:url("../assets/img/menu-close.svg");height:48px;width:48px;background-position:center;background-repeat:no-repeat;background-size:35%;background-color:transparent;background-color:white;border-radius:50%;cursor:pointer}
 #menu.open{-webkit-transform:translateX(0);transform:translateX(0);-webkit-transition:all .3s ease-in;transition:all .3s ease-in}
 .hero{height:100vh;width:100vw;background-size:cover;background-position:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;overflow:hidden}
@@ -48,6 +48,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .block{height:auto;width:100%;display:grid;color:#383838}
 .block.right{grid-template-columns:1fr 1.7fr}
 .block.left{grid-template-columns:1.7fr 1fr}
+.block.map a{display:inline}
 .block .googlemap{height:100%;width:100%;min-height:35vh}
 .block .block-content{padding:8vh 5vw;background-color:#f2f2f2}
 .block .block-content p{font-family:"Work Sans";font-size:20px;line-height:36px}
@@ -322,6 +323,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 #menu #menu-whr-menu>li{width:250px;padding:.5rem;-webkit-box-sizing:border-box;box-sizing:border-box}
 #menu #menu-whr-menu>li:hover,#menu #menu-whr-menu>li.current-menu-item{background:#fff}
 #menu #menu-whr-menu>li:hover>a,#menu #menu-whr-menu>li.current-menu-item>a{color:#a8925e}
+#menu #menu-whr-menu>li.current-menu-item{opacity:.5}
 #menu #menu-whr-menu .menu-item-has-children:hover .sub-menu{display:block}
 #menu #menu-whr-menu li{text-align:right;list-style:none;font-size:20px}
 }@media(min-width:800px) and (max-width:800px){#menu .sub-menu{display:block;position:static;background:#a8925e;font-size:20px}
