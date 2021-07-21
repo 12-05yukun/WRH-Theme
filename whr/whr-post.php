@@ -106,6 +106,7 @@ function create_room() {
 		'hierarchical' => false,
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
+		'rewrite' => array('slug' => 'zimmer'),
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);
