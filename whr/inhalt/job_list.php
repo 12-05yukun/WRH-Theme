@@ -53,11 +53,13 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
   
 </div>
         <?php foreach($jobs as $job){?>
-                <?php if(get_field('job_level',$job)=='profi'){?>
+                <?php if(get_field('job_level',$job)=='profi'){
+                  $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
+
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
                                <div class='title'> <?php echo get_field('title',$job)?></div>
                                <div class='ort'><?php echo get_field('ort',$job)?></div>
-                               <div class='start'>Eintritt ab:  <?php echo get_field('start',$job)?></div>
+                               <div class='start'>Eintritt ab:  <?php echo $start;?></div>
                         </a>
                 <?php }?>
         <?php }?>
@@ -87,11 +89,13 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
   </div>
   </div>
       <?php foreach($jobs as $job){?>
-                <?php if(get_field('job_level',$job)=='ausbildung'){?>
+                <?php if(get_field('job_level',$job)=='ausbildung'){
+                                    $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
+
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
                                <div class='title'> <?php echo get_field('title',$job)?></div>
                                <div class='ort'><?php echo get_field('ort',$job)?></div>
-                               <div class='start'>Eintritt ab:  <?php echo get_field('start',$job)?></div>
+                               <div class='start'>Eintritt ab:  <?php echo $start;?></div>
                         </a>
                 <?php }?>
         <?php }?>
