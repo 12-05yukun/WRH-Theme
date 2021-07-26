@@ -27,6 +27,9 @@ header("Access-Control-Allow-Headers: *");
             $behandlungen = $r['cart'];
             $name = $r['name'];
             $email = $r['email'];
+            $start = $r['start'];
+            $end = $r['end'];
+
             $now = date("d.m.Y – H:i");
             ob_start();
             include 'whr-anfrage-mail.php';

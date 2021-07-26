@@ -354,6 +354,8 @@
                         <i>Datum: </i><?php echo $now;?> Uhr<br />
                         <i>Name: </i><?php echo $name;?><br />
                         <i>E-Mail-Adresse: </i><?php echo $email;?><br /></p>
+                        <i>Reisezeitraum: </i><?php echo $start.'–'.$end;?><br /></p>
+
                         <p><i>Behandlungen:</i></p>
                         <hr />
                         <?php if($behandlungen):foreach($behandlungen as $behandlung):
