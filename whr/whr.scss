@@ -2321,3 +2321,27 @@ h3 {
 		}
 	}
 }
+
+.scroll-up {
+	height: 50px;
+	width: 50px;
+	background: red;
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	background: #fff;
+	background-size: 70%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("../assets/img/icons8-collapse_arrow.svg");
+	transition: all 0.3s ease;
+	cursor: pointer;
+	&:hover {
+		transition: all 0.3s ease;
+		background-color: $gold;
+	}
+	@media (max-width: 800px) {
+		bottom: 150px;
+		right: 0;
+	}
+}

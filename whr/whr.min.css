@@ -314,6 +314,8 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .component-iconlist .inner .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-gap:2rem;margin-top:3rem}
 .component-iconlist .inner .grid .icon{text-align:center}
 .component-iconlist .inner .grid .icon img{max-width:50%;height:auto;margin-bottom:1rem}
+.scroll-up{height:50px;width:50px;background:red;position:fixed;right:25px;bottom:25px;background:#fff;background-size:70%;background-position:center;background-repeat:no-repeat;background-image:url("../assets/img/icons8-collapse_arrow.svg");-webkit-transition:all .3s ease;transition:all .3s ease;cursor:pointer}
+.scroll-up:hover{-webkit-transition:all .3s ease;transition:all .3s ease;background-color:#a8925e}
 @media(min-width:800px){#menu .sub-menu{min-width:400px;position:absolute;margin-right:250px;margin-top:-100px;right:0;width:100%;display:none;min-height:100%}
 #menu .sub-menu li{padding:.5rem;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 #menu .sub-menu li.current-menu-item,#menu .sub-menu li:hover{text-decoration:underline}
@@ -493,5 +495,6 @@ h2{font-size:24px;line-height:32px}
 .kontakt-list{padding:8px 32px;grid-template-columns:1fr}
 .kontakt-list .kontakt-box .kontakt-content a{font-size:12px}
 .component-iconlist .inner .grid{grid-template-columns:repeat(2,1fr)}
+.scroll-up{bottom:150px;right:0}
 }@media(max-width:500px){.component-iconlist .inner .grid{grid-template-columns:repeat(1,1fr)}
 }

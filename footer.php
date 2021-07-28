@@ -39,6 +39,8 @@
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
 		</script>
+		<div id="scrollUp"  class="scroll-up">
 
+		</div>
 	</body>
 </html>
