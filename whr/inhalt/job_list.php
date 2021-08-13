@@ -119,6 +119,9 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
                                $(e.target).addClass('selected');
                                $('.ausbild').css('display','flex');
                                $('.profi').css('display','none')
+			        $('.ausbild').css('transform','none');
+                               $('.ausbild').css('opacity','1');
+
                        }
                })
 
