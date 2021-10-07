@@ -6,7 +6,7 @@
        
     </div>
     <?php if($block['video']){?>
-       <video autoplay loop muted src="<?php echo $block['video'];?>">
+       <video autoplay loop muted playsinline src="<?php echo $block['video'];?>">
        </video>
     <?php } ?>
     <?php if($block['sidebar']){?>
