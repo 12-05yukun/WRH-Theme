@@ -46,9 +46,9 @@ $values = get_field('ausstattung');
   <div class='halfblock room-block align-<?php echo $room['alignment'];?>'>
 
         <div class='room-slicker'>
-     <?php foreach($room['imagelist'] as $image){?>
+     <?php if($room['imagelist']):foreach($room['imagelist'] as $image){?>
          <div class='block-image' style='background-image:url(<?php echo wp_get_attachment_url($image);?>)'></div>
-     <?php }?>
+     <?php };endif;?>
      </div>
     <div class='block-content'>
       <?php echo $room['text'];?>
