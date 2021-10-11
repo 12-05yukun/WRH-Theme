@@ -747,7 +747,7 @@ h3 {
 		}
 		.room-slicker {
 			display: block;
-			width: 50vw;
+			width: 50%;
 			height: auto;
 			.slick-list {
 				height: 100% !important;
@@ -2344,4 +2344,16 @@ h3 {
 		bottom: 150px;
 		right: 0;
 	}
+}
+
+.align-image_left {
+	> * {
+		width: 50%;
+	}
+}
+.align-image_right {
+	> * {
+		width: 50%;
+	}
+	flex-direction: row-reverse;
 }

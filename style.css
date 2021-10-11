@@ -2,7 +2,7 @@
 	Theme Name: WHR
 	Theme URI: http://www.12-05.de	
 	Description: Theme für das WHR
-	Version: 1.39
+	Version: 1.40
 	Author: Yukun Liu
 	Author URI: 
     Tags: Blank, HTML5, CSS3
@@ -60,9 +60,9 @@ input:focus {
 	border: 1px solid #04a4cc;
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
 	body > iframe {
-		display:none!important;
+		display: none !important;
 	}
 }
 

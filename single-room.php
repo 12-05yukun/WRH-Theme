@@ -12,27 +12,7 @@ $values = get_field('ausstattung');
 </div>
 
 <div class='halfblock room-block'>
-  <?php if(get_field('image_aligement')=='right'){?>
-    <div class='block-content'>
-      <?php echo get_field('text')?>
-      <div class='ausstattung-title'> AUSSTATTUNG</div>
-      <div class='ausstattung-list'>
-          <?php
-             foreach(get_field('ausstattung') as $ausstattung){
-             ?>
-               <div role="img" alt="heart" class='<?php echo $ausstattung?>'></div>
-             <?php }?>    
-      </div>
-      <?php if(get_field('link')){?>
-         <a href='<?php echo get_field('link')['url']?>'><?php echo get_field('link')['title']?></a>
-      <?php }?>
-    </div>
-    <div class='room-slicker'>
-     <?php foreach(get_field('imagelist') as $image){?>
-         <div class='block-image' style='background-image:url(<?php echo $image['image']?>)'></div>
-     <?php }?>
-   </div>
-  <?php }else{?>
+
         <div class='room-slicker'>
      <?php foreach(get_field('imagelist') as $image){?>
          <div class='block-image' style='background-image:url(<?php echo $image['image']?>)'></div>
@@ -60,7 +40,25 @@ $values = get_field('ausstattung');
          <a href='<?php echo get_field('link')['url']?>'><?php echo get_field('link')['title']?></a>
       <?php }?>
     </div>
-  <?php } ?>
+</div>
+<?php if(get_field('additional_suites')) {
+  foreach(get_field('additional_suites') as $room) {?>
+  <div class='halfblock room-block align-<?php echo $room['alignment'];?>'>
+
+        <div class='room-slicker'>
+     <?php foreach($room['imagelist'] as $image){?>
+         <div class='block-image' style='background-image:url(<?php echo wp_get_attachment_url($image);?>)'></div>
+     <?php }?>
+     </div>
+    <div class='block-content'>
+      <?php echo $room['text'];?>
+  
+    </div>
+</div>
+  <?php }
+}?>
+<div class="half-block room-block">
+
 </div>
 
 
