@@ -2346,6 +2346,10 @@ h3 {
 	}
 }
 
+.room-slicker {
+	flex-shrink: 0 !important;
+}
+
 .align-image_left {
 	> * {
 		width: 50%;

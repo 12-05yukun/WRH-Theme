@@ -316,6 +316,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .component-iconlist .inner .grid .icon img{max-width:50%;height:auto;margin-bottom:1rem}
 .scroll-up{height:50px;width:50px;background:red;position:fixed;right:25px;bottom:25px;background:#fff;background-size:70%;background-position:center;background-repeat:no-repeat;background-image:url("../assets/img/icons8-collapse_arrow.svg");-webkit-transition:all .3s ease;transition:all .3s ease;cursor:pointer}
 .scroll-up:hover{-webkit-transition:all .3s ease;transition:all .3s ease;background-color:#a8925e}
+.room-slicker{-ms-flex-negative:0 !important;flex-shrink:0 !important}
 .align-image_left>*{width:50%}
 .align-image_right{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 .align-image_right>*{width:50%}
