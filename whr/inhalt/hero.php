@@ -5,6 +5,13 @@
         <div class="text"><?php echo $block['subline'];?></div>
        
     </div>
+    <?php if($block['circle']['circle_aktiv']) {?>
+        <a href="<?php echo $block['circle']['circle_link']['url'];?>" target="<?php echo $block['circle']['circle_link']['target'];?>" class="circle">
+        <div class="inner">
+            <?php echo $block['circle']['circle_content'];?>
+    </div>
+        </a>
+    <?php } ?> 
     <?php if($block['video']){?>
        <video autoplay loop muted playsinline src="<?php echo $block['video'];?>">
        </video>
@@ -20,7 +27,40 @@
         </div>
     <?php }?>
 </div>
-
+<style>
+    .hero .circle {
+        background-color: #a8925e;
+        color: #FFF;
+        height:200px;
+        width:200px;
+        border-radius:50%;
+        position:absolute;
+        z-index:99;
+        text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        left:10vw;
+        bottom:15vh;
+        transform:rotate(-15deg);
+        font-size:12px;
+    }
+    @media(max-width:800px) {
+        .hero .circle {
+            border-radius:0px;
+            transform:none;
+            bottom:0;
+            height:auto;
+            padding:1rem 1rem;
+        }
+    }
+    .hero .circle:hover {
+        background: #383838;
+    }
+    .hero .circle * {
+        margin:0;
+    }
+</style>
 <script>
 jQuery(document).ready(function ($) {
         ScrollReveal().reveal(".hero .content", {
