@@ -25,6 +25,11 @@
              </a>
          <?php } ?>
         </div>
+        <a style="overflow:hidden;display:block;width:145px;z-index:3;border:0px;right:0px;position:absolute;bottom: -170px;right: 1%;" href="/bewertungen">
+            <img style="margin-bottom:25px;width: 100%;" src="https://www.theaterhotel-wien.at/wp-content/themes/theaterhotel/img/Libertas_Baumsiegel.png">
+
+
+    </a>
     <?php }?>
 </div>
 <style>
