@@ -26,10 +26,10 @@
          <?php } ?>
         </div>
 
-            <img class="baum-siegel" src="/wp-content/uploads/2021/12/Libertas_Baumsiegel.png">
 
 
     <?php }?>
+    <img class="baum-siegel" src="/wp-content/uploads/2021/12/Libertas_Baumsiegel.png">
 </div>
 <style>
     .hero .circle {
