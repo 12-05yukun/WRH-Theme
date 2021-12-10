@@ -2361,3 +2361,48 @@ h3 {
 	}
 	flex-direction: row-reverse;
 }
+
+.partner-hotels{
+	h2{
+		text-align: center;
+	}
+	max-width:800px;
+	.partner-hotels-container{
+		justify-items: center;
+		width:auto;
+		display:grid;
+	
+		grid-gap:2rem;
+		grid-template-columns: 1fr 1fr;
+		@media(max-width:800px) {
+								grid-template-columns: 1fr;
+							}
+
+		.partner-hotels-figurebox{
+			position: relative;
+			margin:0;
+			img {
+				width:100%; 
+				height:auto;
+			}
+			.img-caption{
+				position: absolute;
+				bottom: 15%;
+				font-weight: bold;
+				font-size: 24px;
+				color: #FFF;
+				display: inline-block;
+				padding: 5px 10px;
+				background-color: rgba(0,0,0,0.5);
+				left: 0;
+				@media(max-width:800px) {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+

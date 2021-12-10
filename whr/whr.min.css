@@ -320,6 +320,12 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .align-image_left>*{width:50%}
 .align-image_right{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 .align-image_right>*{width:50%}
+.partner-hotels{max-width:800px}
+.partner-hotels h2{text-align:center}
+.partner-hotels .partner-hotels-container{justify-items:center;width:auto;display:grid;grid-gap:2rem;grid-template-columns:1fr 1fr}
+.partner-hotels .partner-hotels-container .partner-hotels-figurebox{position:relative;margin:0}
+.partner-hotels .partner-hotels-container .partner-hotels-figurebox img{width:100%;height:auto}
+.partner-hotels .partner-hotels-container .partner-hotels-figurebox .img-caption{position:absolute;bottom:15%;font-weight:bold;font-size:24px;color:#FFF;display:inline-block;padding:5px 10px;background-color:rgba(0,0,0,0.5);left:0}
 @media(min-width:800px){#menu .sub-menu{min-width:400px;position:absolute;margin-right:250px;margin-top:-100px;right:0;width:100%;display:none;min-height:100%}
 #menu .sub-menu li{padding:.5rem;display:-webkit-box;display:-ms-flexbox;display:flex;width:100%;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
 #menu .sub-menu li.current-menu-item,#menu .sub-menu li:hover{text-decoration:underline}
@@ -500,5 +506,7 @@ h2{font-size:24px;line-height:32px}
 .kontakt-list .kontakt-box .kontakt-content a{font-size:12px}
 .component-iconlist .inner .grid{grid-template-columns:repeat(2,1fr)}
 .scroll-up{bottom:150px;right:0}
+.partner-hotels .partner-hotels-container{grid-template-columns:1fr}
+.partner-hotels .partner-hotels-container .partner-hotels-figurebox .img-caption{font-size:1rem}
 }@media(max-width:500px){.component-iconlist .inner .grid{grid-template-columns:repeat(1,1fr)}
 }
