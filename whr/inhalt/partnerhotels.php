@@ -2,7 +2,7 @@
 <?php if($block['hotels']){?>
         <?php }?>
         <h2 ><?php echo $block['titel']?> </h2>
-        <div class='partner-hotels-container'>
+        <div class='partner-hotels-container aks'>
                 <?php $i = 0;?>
         <?php foreach($block['hotels'] as $hotels){?>
                 <?php $i++;?>
