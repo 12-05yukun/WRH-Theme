@@ -320,7 +320,7 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .align-image_left>*{width:50%}
 .align-image_right{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 .align-image_right>*{width:50%}
-.partner-hotels{max-width:800px}
+.partner-hotels{-webkit-box-sizing:content-box;box-sizing:content-box;max-width:800px}
 .partner-hotels h2{text-align:center}
 .partner-hotels .partner-hotels-container{justify-items:center;width:auto;display:grid;grid-gap:2rem;grid-template-columns:1fr 1fr}
 .partner-hotels .partner-hotels-container .partner-hotels-figurebox{position:relative;margin:0}
