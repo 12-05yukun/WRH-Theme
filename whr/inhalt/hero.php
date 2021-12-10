@@ -26,7 +26,7 @@
          <?php } ?>
         </div>
 
-            <img class="baumsiegel" src="/wp-content/uploads/2021/12/Libertas_Baumsiegel.png">
+            <img class="baum-siegel" src="/wp-content/uploads/2021/12/Libertas_Baumsiegel.png">
 
 
     <?php }?>
