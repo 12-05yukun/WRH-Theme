@@ -1,6 +1,11 @@
 <?php 
     /* Template Name: E-Mail Signatur */
 ?>
+
+<style>.weglot-dropdown {
+    display:none;
+}
+    </style>
 <html>
     <body>
     <table cellpadding="0" cellspacing="0" align="center" style="background-color:#FFFF;font-family: Arial, Helvetica, sans-serif;width:100%;text-align:center;border:0px;margin:0; " >
