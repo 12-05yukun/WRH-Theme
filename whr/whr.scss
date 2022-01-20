@@ -914,7 +914,7 @@ h3 {
 }
 
 .pageheader {
-	height: 66vh;
+	height: 45vh;
 	width: 100%;
 	color: white;
 	background-size: cover;
@@ -923,7 +923,7 @@ h3 {
 	position: relative;
 	&:before {
 		@include image-darker();
-		height: 66vh;
+		height: 45vh;
 	}
 	.pageheader-content {
 		position: absolute;

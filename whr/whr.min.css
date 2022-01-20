@@ -122,8 +122,8 @@ h3{font-family:"Noto Serif",serif;font-size:32px;font-weight:normal}
 .fulltext .link:hover{-webkit-transition:.3s all;transition:.3s all;-webkit-transform:translateX(10px);transform:translateX(10px)}
 .fulltext .link:hover:after{-webkit-transition:.3s all;transition:.3s all;-webkit-transform:translateX(10px);transform:translateX(10px)}
 .fulltext .link:after{-webkit-transition:.3s all;transition:.3s all;content:url("../assets/img/right-arrow.svg");margin-left:16px}
-.pageheader{height:66vh;width:100%;color:white;background-size:cover;background-repeat:no-repeat;background-position:center;position:relative}
-.pageheader:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);height:66vh}
+.pageheader{height:45vh;width:100%;color:white;background-size:cover;background-repeat:no-repeat;background-position:center;position:relative}
+.pageheader:before{content:"";position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);height:45vh}
 .pageheader .pageheader-content{position:absolute;bottom:25px;left:128px;max-width:660px}
 .pageheader .pageheader-content *{line-height:1.2}
 .pageheader .pageheader-content .content-text{font-family:"Work Sans";font-size:20px;line-height:36px}
