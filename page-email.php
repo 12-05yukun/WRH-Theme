@@ -8,7 +8,7 @@
     </style>
 <html>
     <body>
-    <table cellpadding="0" cellspacing="0" align="center" style="background-color:#FFFF;font-family: Arial, Helvetica, sans-serif;width:100%;text-align:center;border:0px;margin:0; " >
+    <table cellpadding="0" cellspacing="0" align="center" style="background-color:#FFFF;font-family: Arial, Helvetica, sans-serif;width:100%;text-align:left;border:0px;margin:0; " >
             <tr>
                 <td>
 
