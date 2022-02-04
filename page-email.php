@@ -23,7 +23,7 @@
                 </td>
     </tr>
 </table>
-        <table  cellpadding="0" cellspacing="0" align="center" style="background-color:#EEE;font-family: Arial, Helvetica, sans-serif;width:600px;text-align:center;border:0px;marign:0; " >
+        <table  cellpadding="0" cellspacing="0" align="left" style="background-color:#EEE;font-family: Arial, Helvetica, sans-serif;width:600px;text-align:center;border:0px;marign:0; " >
             <tr>
                 <td>
                 <?php if(get_field('aktion_aktiv')):?>
