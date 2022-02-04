@@ -8,7 +8,7 @@
     </style>
 <html>
     <body>
-    <table cellpadding="0" cellspacing="0" align="center" style="background-color:#FFFF;font-family: Arial, Helvetica, sans-serif;width:100%;text-align:left;border:0px;margin:0; " >
+    <table cellpadding="0" cellspacing="0" align="center" style="background-color:#FFFF;font-family: Arial, Helvetica, sans-serif;width:600px;text-align:left;border:0px;margin:0; " >
             <tr>
                 <td>
 
@@ -23,7 +23,7 @@
                 </td>
     </tr>
 </table>
-        <table  cellpadding="0" cellspacing="0" align="center" style="background-color:#EEE;font-family: Arial, Helvetica, sans-serif;width:100%;text-align:center;border:0px;marign:0; " >
+        <table  cellpadding="0" cellspacing="0" align="center" style="background-color:#EEE;font-family: Arial, Helvetica, sans-serif;width:600px;text-align:center;border:0px;marign:0; " >
             <tr>
                 <td>
                 <?php if(get_field('aktion_aktiv')):?>
@@ -40,7 +40,7 @@
                 </td>
     </tr>
 </table>
-<table align="left" style="background-color:#A8925E;font-family: Arial, Helvetica, sans-serif;width:100%;text-align:center;border:0px;margin:0;" >
+<table align="left" style="background-color:#A8925E;font-family: Arial, Helvetica, sans-serif;width:600px;text-align:center;border:0px;margin:0;" >
             <tr>
                 <td>
 <table   align="left" cellspacing="0" style="width:600px;border:0px;">
