@@ -6,6 +6,9 @@
   .weglot-dropdown {
     display: none;
   }
+	.golden {
+		color: #FFF;
+	}
 </style>
 <html>
   <body>
@@ -154,6 +157,7 @@
                         <?php the_field('firmierung');?>
                       </h3>
                       <table
+														 class="golden"
                         style="
                           background-color: #a8925e;
                           font-size: 12px;
