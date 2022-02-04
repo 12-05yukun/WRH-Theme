@@ -43,7 +43,7 @@
 <table align="left" style="background-color:#A8925E;font-family: Arial, Helvetica, sans-serif;width:600px;text-align:center;border:0px;margin:0;" >
             <tr>
                 <td>
-<table   align="left" cellspacing="0" style="width:600px;border:0px;">
+<table   align="left" cellspacing="0" style="width:100%;border:0px;">
     <tr style="background-color:#A8925E;color:#FFF;">
     <td  style="vertical-align:top;text-align:center;padding:16px;width:30%"><img  style="width:100px;height:auto" src="<?php the_field('logo');?> " alt="Logo" /><td>
 
