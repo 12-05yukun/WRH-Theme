@@ -28,7 +28,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
 ?>
    
 
-<div class='row kontakt'>
+<div class='row kontakt' style="padding:0">
   <div>
     <h2><?php echo $block['headline_profi']?></h2>
     <div><?php echo $block['text_profi']?></div>
@@ -37,6 +37,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
     <?php }?>
   </div>
     <div>
+
   <div class='partner-box'>
       <div class='partner-info'>
         <div class='partner-title'>IHR ANSPRECHPARTNER</div>
@@ -65,7 +66,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
         <?php }?>
       </div>
       <div class='joblist-container ausbild'>
-      <div class='row kontakt'>
+      <div class='row kontakt' style="padding:0">
   <div>
     <h2><?php echo $block['headline_azubi']?></h2>
     <div><?php echo $block['text_azubi']?></div>
