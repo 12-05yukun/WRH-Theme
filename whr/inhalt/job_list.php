@@ -31,16 +31,10 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
 <div class='row kontakt' style="padding:0">
   <div>
     <h2><?php echo $block['headline_profi']?></h2>
-    <div><?php echo $block['text_profi']?></div>
-    <?php if($block['link']){?>
-     <a class='link' href='<?php echo $block['link_profi']['url']?>'><?php echo $block['link_profi']['title']?></a>
-    <?php }?>
-  </div>
-    <div>
-<div class="joblist-container">
-	    <?php foreach($jobs as $job){?>
-                <?php if(get_field('job_level',$job)=='ausbildung'){
-                                    $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
+	  <div class="job-container">
+		   <?php foreach($jobs as $job){?>
+                <?php if(get_field('job_level',$job)=='profi'){
+                  $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
 
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
                                <div class='title'> <?php echo get_field('title',$job)?></div>
@@ -48,7 +42,15 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
                                <div class='start'>Eintritt ab:  <?php echo $start;?></div>
                         </a>
                 <?php }?>
-        <?php }?>
+        <?php }?> 
+	  </div>
+    <div><?php echo $block['text_profi']?></div>
+    <?php if($block['link']){?>
+     <a class='link' href='<?php echo $block['link_profi']['url']?>'><?php echo $block['link_profi']['title']?></a>
+    <?php }?>
+  </div>
+    <div>
+
 	    </div>
   <div class='partner-box'>
       <div class='partner-info'>
@@ -65,17 +67,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
   </div>
   
 </div>
-        <?php foreach($jobs as $job){?>
-                <?php if(get_field('job_level',$job)=='profi'){
-                  $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
-
-                        <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
-                               <div class='title'> <?php echo get_field('title',$job)?></div>
-                               <div class='ort'><?php echo get_field('ort',$job)?></div>
-                               <div class='start'>Eintritt ab:  <?php echo $start;?></div>
-                        </a>
-                <?php }?>
-        <?php }?>
+      
       </div>
       <div class='joblist-container ausbild'>
       <div class='row kontakt' style="padding:0">
