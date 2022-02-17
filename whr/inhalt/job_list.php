@@ -33,7 +33,7 @@ $email2=get_field( 'email', $block['partner_azubi']->ID );
     <h2><?php echo $block['headline_profi']?></h2>
 	  <div class="job-container-test">
 		   <?php foreach($jobs as $job){?>
-                <?php if(get_field('job_level',$job)=='profi'){
+                <?php if(get_field('job_level',$job)=='ausbildung'){
                   $start = get_field('ab_sofort', $job) ? "Ab sofort, oder nach Vereinbarung":get_field('start', $job);?>
 
                         <a href='<?php echo the_permalink($job->ID)?>' class='job-container'>
